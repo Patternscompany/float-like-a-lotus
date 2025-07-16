@@ -50,7 +50,7 @@ body {
 }
 
 .bg-primary-color {
-  background-color: var(--primary-color);
+  background-color:#F291A3
 }
 
 .bg-primary-color-2 {
@@ -213,18 +213,18 @@ img {
 
 .nav-link {
   font-size: 1.15rem;
-  color: var(--text-color);
+  color: white !important;
   font-weight: 600;
   padding-block: 1.85rem;
   padding-inline: 1.50rem;
 }
 
 .nav-link:hover {
-  color: var(--accent-color) !important;
+  color: #e8be45 !important;
 }
 
 .nav-link.active {
-  color: var(--primary-color) !important;
+  color: white !important;
 }
 
 .dropdown-menu{
@@ -274,13 +274,14 @@ img {
 }
 
 .btn-quotes:hover {
-  background-color: var(--primary-color);
+  background-color: #e8be45;
   color: #FFFFFF;
   border: none;
 }
 
 .btn-primary-solid {
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
+  background-color: #F291A3;
   color: #FFFFFF;
   font-size: 1.15rem;
   padding: 0.75rem 1.5rem;
@@ -291,7 +292,7 @@ img {
 }
 
 .btn-primary-solid:hover {
-  background-color: var(--accent-color);
+  background-color:#e8be45;
   color: #FFFFFF;
   border: none;
   transform: scale(1.1);
@@ -807,7 +808,7 @@ img {
   .nav-link.active,
   .nav-link:hover,
   .nav-link:focus {
-    color: var(--primary-color) !important;
+    color: white !important
   }
 
   .navbar-nav .nav-link {
@@ -1072,12 +1073,50 @@ img {
   padding: 0.75rem 2rem;
   font-weight: 600;
   border-radius: 30px;
-  background-color: #1d4ed8;
+  background-color: #F291A3;
   border: none;
   transition: background 0.3s ease;
 }
 
 .hero-btn:hover {
-  background-color: #163fb9;
+  /* background-color: #163fb9; */
+  background-color: #e8be45;
   color: #fff;
+}
+
+
+.hypnosis-section {
+  background: linear-gradient(to right, #b2c4f1, #ecc0d2);
+  color: #212529;
+}
+
+
+.section-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #06321f;
+}
+
+.section-subheading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #06321f;
+}
+
+.intro-text {
+  font-size: 1.1rem;
+  max-width: 800px;
+  color: #444;
+}
+
+.benefits-list li {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  padding-left: 1.25rem;
+  position: relative;
+  color: #333;
+}
+
+.benefits-list i {
+  font-size: 1.1rem;
 }

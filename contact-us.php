@@ -120,7 +120,7 @@ $page_title = "Contact Us";
                   <i class="bi bi-envelope-fill fs-2 text-white"></i>
                 </div>
                 <h4 class="card-title mt-3 fw-bolder">Need Support?</h4>
-                <p class="card-text text-muted-color">(555) 123-4567<br>Info@Yourmail.com</p>
+                <p class="card-text text-muted-color">+91-8498057950<br>shilpa@gmail.com</p>
               </div>
             </div>
           </div>

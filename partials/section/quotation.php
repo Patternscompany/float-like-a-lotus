@@ -130,7 +130,7 @@
                   </div>
                   <div class="ms-2 font-1 py-2">
                     <p class="fw-bold text-primary-color mb-0">Call us anytime</p>
-                    <h5 class="fw-bold">(555) 123-4567</h5>
+                    <h5 class="fw-bold">+91-8498057950</h5>
                   </div>
                 </div>
                 <div class="d-flex align-items-center gap-3 justify-content-start mt-3" data-aos="fade-left"
@@ -142,7 +142,7 @@
                   </div>
                   <div class="ms-2 font-1 py-2">
                     <p class="fw-bold text-primary-color mb-0">Email us</p>
-                    <h5 class="fw-bold">Info@Yourmail.Com</h5>
+                    <h5 class="fw-bold">shilpa@gmail.com</h5>
                   </div>
                 </div>
                 <div class="d-flex align-items-center gap-3 justify-content-start" data-aos="fade-left"
