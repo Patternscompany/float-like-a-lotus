@@ -4671,7 +4671,7 @@ fieldset:disabled .btn {
         width: auto !important;
         height: auto !important;
         visibility: visible !important;
-        background-color: transparent !important;
+        background: linear-gradient(to right, rgb(178, 196, 241), rgb(236, 192, 210));
         border: 0 !important;
         transform: none !important;
         transition: none
@@ -7603,7 +7603,8 @@ fieldset:disabled .btn {
     max-width: 100%;
     color: var(--bs-offcanvas-color);
     visibility: hidden;
-    background-color: var(--bs-offcanvas-bg);
+    /* background-color: var(--bs-offcanvas-bg); */
+     background: linear-gradient(to right, rgb(178, 196, 241), rgb(236, 192, 210));
     background-clip: padding-box;
     outline: 0;
     transition: var(--bs-offcanvas-transition)
