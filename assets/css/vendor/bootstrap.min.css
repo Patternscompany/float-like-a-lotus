@@ -3596,9 +3596,9 @@ fieldset:disabled .btn {
 }
 
 .btn-danger {
-    --bs-btn-color: #fff;
-    --bs-btn-bg: #dc3545;
-    --bs-btn-border-color: #dc3545;
+    --bs-btn-color:#000;
+    --bs-btn-bg: var(--accent-color-2);;
+    --bs-btn-border-color: var(--accent-color-2);
     --bs-btn-hover-color: #fff;
     --bs-btn-hover-bg: #bb2d3b;
     --bs-btn-hover-border-color: #b02a37;
@@ -3631,8 +3631,8 @@ fieldset:disabled .btn {
 
 .btn-dark {
     --bs-btn-color: #fff;
-    --bs-btn-bg: #212529;
-    --bs-btn-border-color: #212529;
+    --bs-btn-bg: #17BEBB;
+    --bs-btn-border-color: white;
     --bs-btn-hover-color: #fff;
     --bs-btn-hover-bg: #424649;
     --bs-btn-hover-border-color: #373b3e;
