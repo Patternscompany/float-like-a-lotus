@@ -10,8 +10,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <title>Nuro – Mental Health & Therapy PHP Template</title>
+  <link rel="icon" type="image/x-icon" href="./assets/image/lotus-logo.png">
+  <title>Float | Like | A | Lotus</title>
   <!-- Animation On Scroll (AOS) -->
   <link rel="stylesheet" href="./assets/css/vendor/aos.css">
   <!-- Swiper CSS -->
@@ -27,7 +27,7 @@
 
   <!-- <?php require('./partials/top-bar.php'); ?> -->
 <!-- Top Bar -->
-<div class="top-bar py-3">
+<div class="top-bar">
   <div class="b-container">
     <div class="d-flex justify-content-between align-items-center text-white px-3">
       <div class="d-flex align-items-center">
@@ -36,7 +36,7 @@
         </div>
         &nbsp;|&nbsp;
         <div class="ps-3">
-          <p class="my-1 py-1">123 Serenity Lane, Blissfield, CA 90210</p>
+          <p class="my-1 py-1">Hyderabad, Telangana, India</p>
         </div>
       </div>
       <div class="social-box align-items-center">
@@ -51,30 +51,25 @@
   </div>
 </div>
 <!-- #top end -->
-
-
-  <!-- <?php require('./partials/header.php'); ?> -->
-
-
   <!-- Header -->
-<header class="bg-white">
+<header style="background: linear-gradient(to right, #b2c4f1, #ecc0d2);">
   <div class="b-container">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light" aria-label="Offcanvas navbar large">
       <div class="container-fluid">
         <div class="logo-box">
-          <a href="index.php" class="navbar-brand">
-            <img src="./assets/image/Main-Logo.png" alt="Main Logo"></a>
+          <a href="index.html" class="navbar-brand">
+            <img src="./assets/image/lotus-logo-updated.png" alt="Main Logo"></a>
         </div>
         <button class="navbar-toggler bg-primary-color border-0" type="button" data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span class="bi bi-list text-white fs-2"></span>
         </button>
-        <div class="offcanvas offcanvas-start bg-light" tabindex="-1" id="offcanvasNavbar"
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header" id="offcanvasNavbarLabel">
             <div class="logo-drawer">
-              <a href="index.php" class="navbar-brand"><img src="./assets/image/Main-Logo.png" alt="Drawer Logo"
+              <a href="index.html" class="navbar-brand"><img src="./assets/image/lotus-logo-updated.png" alt="Drawer Logo"
                   class="img-fluid"></a>
             </div>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -82,10 +77,13 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav mx-auto mb-2 mb-xl-0 gap-xl-4 justify-content-center flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.php">Homepage</a>
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about-us.php">About Us</a>
+                <a class="nav-link" href="about-us.html">About</a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link" href="role-of-hypnosis.html">Role of Hypnosis</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -93,31 +91,21 @@
                   Services
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="services.php">Our Services</a></li>
-                  <li><a class="dropdown-item" href="service-detail.php">Service Detail</a></li>
-                  <li><a class="dropdown-item" href="appointment.php">Appointment</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Pages
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="pricing.php">Pricing</a></li>
-                  <li><a class="dropdown-item" href="team.php">Team</a></li>
-                  <li><a class="dropdown-item" href="blogs.php">Blogs</a></li>
-                  <li><a class="dropdown-item" href="blog-detail.php">Blog Detail</a></li>
-                  <li><a class="dropdown-item" href="faqs.php">FAQs</a></li>
-                  <li><a class="dropdown-item" href="error-404.php">Error 404</a></li>
+                  <li><a class="dropdown-item" href="addictions.html">Addictions</a></li>
+                  <li><a class="dropdown-item" href="healing.html">Healing</a></li>
+                  <li><a class="dropdown-item" href="law-of-attraction.html">Law Of Attraction</a></li>
+                  <li><a class="dropdown-item" href="services.php">Overcoming Fears</a></li>
+                  <li><a class="dropdown-item" href="service-detail.php">Sleep Improvement</a></li>
+                  <li><a class="dropdown-item" href="appointment.php">Self-Confidence
+</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact-us.php">Contact Us</a>
+                <a class="nav-link" href="contact-us.html">Contact Us</a>
               </li>
             </ul>
             <div class="mt-lg-3">
-              <a href="contact-us.php" class="btn btn-quotes">
+              <a href="contact-us.html" class="btn btn-quotes">
                 <i class="bi bi-journal-bookmark-fill pe-2"></i>
                 Get Quotes</a>
             </div>
@@ -144,27 +132,37 @@
       <!-- Left Content -->
       <div class="col mt-md-5 text-center text-lg-start d-flex flex-column align-items-center align-items-lg-start"
         data-aos="fade-up" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="1000">
-        <h6 class="text-primary-color fw-semibold">FIND BALANCE, EMBRACE LIFE</h6>
+        <!-- <h6 class="text-primary-color fw-semibold">HEAL FROM WITHIN</h6> -->
         <h1 class="display-md-4 lh-sm font-1" style="font-weight: 900;">
-          Caring for Your <span class="text-primary-color">Inner</span> Peace
+           Welcome to <span class="text-primary-color">Float Like A Lotus</span>
         </h1>
         <hr class="border border-white border-2 opacity-75 w-75 my-4 mx-auto mx-lg-0">
-        <p class="fs-5 my-4">
-          Discover clarity, confidence, and emotional wellness through guided support that helps you manage stress,
-          heal from within, and grow stronger in every aspect of your mental health journey.
+        <p class="fs-6">
+          At Float Like a Lotus we draw deep inspiration from the lotus flower—rooted in the mud, yet rising above the surface to bloom in calm, open water. The lotus symbolizes resilience, healing, and transformation—growing through difficulty to reach a place of clarity and peace.
         </p>
-        <div
+         <p class="fs-6">
+          Just like the lotus, you may feel stuck in the mud—held back by anxiety, trauma, self-doubt, or the weight of past experiences. At Float Like a Lotus therapy is a space where you’re gently supported to rise above it all. We meet you where you are, walk beside you through the messy parts, and help you reconnect with your strength, purpose, and self-worth.
+        </p>
+         <p class="fs-6">
+         The float in Float Like a Lotus speaks to the freedom, balance, and ease that becomes possible when we begin to heal. You don’t have to stay rooted in pain. With time, care, and the right support, you can rise—and float—into a lighter, more empowered version of yourself.
+        </p>
+         <p class="fs-6">
+        Let us help you grow through what you’ve been through.
+        </p>
+         <p class="fs-6">
+        Because like the lotus, you’re meant to bloom.
+        </p>
+        <!-- <div
           class="d-flex gap-3 align-items-center my-4 flex-nowrap justify-content-lg-start justify-content-center">
-          <a href="appointment.php" role="button" class="btn btn-primary-solid">Start A Checkup
-            Now</a>
+          <a href="appointment.php" role="button" class="btn btn-primary-solid">Book a Session</a>
           <button class="btn btn-secondary-solid rounded-circle fs-2 p-2 btn-play" type="button"
             style="width: 60px; height: 60px;">
             <i class="bi bi-play-fill"></i>
           </button>
-        </div>
+        </div> -->
       </div>
       <!-- Video Overlay -->
-      <div id="videoOverlay" class="video-overlay d-none mt-0">
+      <!-- <div id="videoOverlay" class="video-overlay d-none mt-0">
         <button type="button" class="btn-close-overlay position-absolute top-0 end-0 m-3 text-white fs-2 border-0 bg-transparent"
           aria-label="Close">
           <i class="bi bi-x-lg"></i>
@@ -175,22 +173,22 @@
               title="YouTube video" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- #video end -->
 
       <!-- Right Image -->
       <div class="col position-relative text-center pt-lg-4 pt-xl-3">
-        <img src="./assets/image/Place-Holder-600x900.jpg" alt="Hero Talent" class="img-fluid position-relative"
-          style="z-index: 2;">
+        <img src="./assets/image/lotus-img-updated.png" alt="Hero Talent" class="img-fluid position-relative"
+          style="z-index: 2; border-top-left-radius: 40%;border-bottom-right-radius: 40%; height: 500px; object-fit: cover;width:80%;">
         <!-- Badge Review -->
-        <div
+        <!-- <div
           class="badge-cta position-absolute top-50 start-0 translate-middle-y bg-secondary-color py-3 px-4 rounded-5 text-white text-center d-none d-md-block"
           style="z-index: 3;">
           <h3 class="mb-0 font-1 fw-bolder count-up" data-count="4.9" data-suffix=" /5">0</h3>
           <p class="mb-0">Review on Google</p>
-        </div>
+        </div> -->
         <!-- Badge Phone -->
-        <div
+        <!-- <div
           class="badge-cta position-absolute top-0 end-0 bg-primary-color py-3 px-4 rounded-5 d-flex align-items-center gap-3 justify-content-start"
           style=" z-index: 1;">
           <div class=" d-flex align-items-center justify-content-center rounded-circle bg-white"
@@ -199,9 +197,9 @@
           </div>
           <div class="justify-content-start">
             <p class="mb-0">Call us anytime</p>
-            <h3 class="font-1 fw-bolder">(555) 123-4567</h3>
+            <h3 class="font-1 fw-bolder">+91-8498057950</h3>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -212,6 +210,7 @@
 <section class="section py-5">
   <div class="b-container">
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 justify-content-center">
+      
       <!-- Card 1 -->
       <div class="col" data-aos="fade-right" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="1000">
         <div class="bg-secondary-color text-white p-4 rounded-5 h-100 transition-hover">
@@ -220,9 +219,9 @@
               style="width: 50px; height: 50px;">
               <i class="bi bi-journal-text fs-4"></i>
             </div>
-            <h6 class="fw-bold mb-2" style="font-size: large;">Personalized<br>Wellness Plans</h6>
+            <h6 class="fw-bold mb-2" style="font-size: large;">Tailored<br>Hypnotherapy Plans</h6>
           </div>
-          <p class="mt-5">Tailored guidance crafted to meet your unique needs and goals effectively.</p>
+          <p class="mt-5">Personalized sessions designed to meet your emotional, behavioral, and healing needs.</p>
         </div>
       </div>
 
@@ -234,9 +233,9 @@
               style="width: 50px; height: 50px;">
               <i class="bi bi-people-fill fs-4"></i>
             </div>
-            <h6 class="fw-bold mb-2" style="font-size: large;">Expert-Led<br>Counseling Sessions</h6>
+            <h6 class="fw-bold mb-2" style="font-size: large;">1-on-1<br>Guided Sessions</h6>
           </div>
-          <p class="mt-5">Professional support designed to guide emotional well-being every single day.</p>
+          <p class="mt-5">Deep, focused coaching to unlock subconscious blocks and empower inner change.</p>
         </div>
       </div>
 
@@ -248,9 +247,9 @@
               style="width: 50px; height: 50px;">
               <i class="bi bi-headset fs-4"></i>
             </div>
-            <h6 class="fw-bold mb-2" style="font-size: large;">24/7 Support<br>Community</h6>
+            <h6 class="fw-bold mb-2" style="font-size: large;">Ongoing<br>Client Support</h6>
           </div>
-          <p class="mt-5">Always-connected space offering care, encouragement, and shared growth.</p>
+          <p class="mt-5">Stay connected through follow-ups and supportive check-ins between sessions.</p>
         </div>
       </div>
 
@@ -262,58 +261,104 @@
               style="width: 50px; height: 50px;">
               <i class="bi bi-tools fs-4"></i>
             </div>
-            <h6 class="fw-bold mb-2" style="font-size: large;">Interactive<br>Self-Care Tools</h6>
+            <h6 class="fw-bold mb-2" style="font-size: large;">Self-Hypnosis<br>Resources</h6>
           </div>
-          <p class="mt-5">Empowering digital resources to build healthy habits independently.</p>
+          <p class="mt-5">Access guided audio tools and exercises to continue your healing at your own pace.</p>
         </div>
       </div>
 
     </div>
   </div>
 </section>
+
 <!-- #features end -->
 
-<!-- About Section -->
-<section class=" section pb-5 my-5">
+<!--About Lotus start-->
+<!-- <section class="section pb-5 my-5">
   <div class="b-container">
-    <div
-      class="row row-cols-1 row-cols-xl-2 g-5 align-items-center justify-content-center text-center text-xl-start">
-      <!-- Left Content Side -->
-      <div class="col position-relative d-flex justify-content-center">
+    <div class="row row-cols-1 row-cols-xl-2 g-5 align-items-center justify-content-center text-center text-xl-start">
+      <!-- Right Content Side (Now First on mobile, Left on desktop) -->
+      <!-- <div class="col order-1 order-xl-1">
+        
+        <h2 style="color: #f291a3;" class="font-1 mb-4 fw-bold ">🌸 Welcome to Float Like A Lotus</h2>
+        <p class="text-secondary" style="font-size: large;">
+         At <span style="color: #f291a3;"> Float Like a Lotus</span> we draw deep inspiration from the lotus flower—rooted in the mud, yet rising above the surface to bloom in calm, open water. The lotus symbolizes resilience, healing, and transformation—growing through difficulty to reach a place of clarity and peace.
+        </p>
+         <p class="text-secondary" style="font-size: large;">
+         <span style="color: #f291a3;">That’s exactly what we help you do.</span>
+        </p>
+        <p class="text-secondary" style="font-size: large;">
+         Just like the lotus, you may feel stuck in the mud—held back by anxiety, trauma, self-doubt, or the weight of past experiences. At <span style="color: #f291a3;">Float Like a Lotus</span> therapy is a space where you’re gently supported to rise above it all. We meet you where you are, walk beside you through the messy parts, and help you reconnect with your strength, purpose, and self-worth.
+        </p>
+        <p class="text-secondary" style="font-size: large;">
+        The “float” in <span style="color: #f291a3;">Float Like a Lotus</span> speaks to the freedom, balance, and ease that becomes possible when we begin to heal. You don’t have to stay rooted in pain. With time, care, and the right support, you can rise—and float—into a lighter, more empowered version of yourself.
+        </p>
+         <p class="text-secondary" style="font-size: large;"><span style="color: #f291a3;">Let us help you grow through what you’ve been through.</span></p>
+                  <p class="text-secondary" style="font-size: large;"><span style="color: #f291a3;">Because like the lotus, you’re meant to bloom.</span></p>
+                  </div> -->
+      
+
+   
+      <!-- <div class="col order-2 order-xl-2 d-flex justify-content-center">
         <div class="position-relative img-container px-0 px-lg-5">
-          <!-- Primary Image -->
+      
           <div class="ratio-wrapper-429">
-            <img src="./assets/image/Place-Holder-1920x1280.jpg" alt="About Us"
+            <img src="./assets/image/lotus-img.png" alt="About Us"
               class="w-100 h-100 object-position-center position-absolute top-0 start-0 rounded-5"
               data-aos="fade-up" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="1000">
           </div>
-          <!-- Experience Label -->
+        
+        </div>
+      </div> -->
+    </div>
+  </div>
+</section>
+<!-- <div class="button-center-container">
+  <div class="consultation-btn-wrapper">
+    <a href="./contact-us.html" class="consultation-btn">BOOK A CONSULTATION</a>
+  </div>
+</div> -->
+
+
+<!--About Lotus end-->
+<!-- About Section -->
+<!-- <section class=" section pb-5 my-5">
+  <div class="b-container">
+    <div
+      class="row row-cols-1 row-cols-xl-2 g-5 align-items-center justify-content-center text-center text-xl-start">
+    
+      <div class="col position-relative d-flex justify-content-center">
+        <div class="position-relative img-container px-0 px-lg-5">
+       
+          <div class="ratio-wrapper-429">
+            <img src="./assets/image/about-us.png" alt="About Us"
+              class="w-100 h-100 object-position-center position-absolute top-0 start-0 rounded-5"
+              data-aos="fade-up" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="1000">
+          </div>
+         
           <div
             class="position-absolute bottom-0 end-0 bg-secondary-color text-white px-4 py-2 rounded-4 m-3 fw-bold small z-1 text-center"
             data-aos="fade-down" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="1000">
             <span class="font-1 fs-2 fw-bold count-up" data-count="10" data-suffix="+ Years">0</span><br>
             <span class="fs-5">Of Experience</span>
           </div>
-          <!-- Circle Image -->
+        
           <div class="position-absolute" style="top: -60px; left: 0; transform: translateX(-11%); z-index: 3;">
             <div class="img-circle rounded-circle overflow-hidden border border-4 border-white shadow"
               data-aos="fade-right" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="1000">
-              <img src="./assets/image/Place-Holder-265x265.jpg" alt="About Us Detail" class="w-100 h-100">
+              <img src="./assets/image/rounded-img.jpg" alt="About Us Detail" class="w-100 h-100">
             </div>
           </div>
         </div>
       </div>
-      <!-- Right Content Side -->
+   
       <div class="col">
         <h6 class="text-primary-color fw-semibold mb-2">ABOUT US</h6>
-        <h2 class="font-1 mb-4" style="font-weight: 800;">Your Journey To Mental Wellness Starts Here</h2>
+        <h2 class="font-1 mb-4" style="font-weight: 800;">Train under Merisa Pier, One of the best Theraipist in the UK</h2>
         <p class="text-secondary" style="font-size: large;">
-          Every small step toward better mental health is a significant achievement in our lives. With the right
-          support, each individual can find the strength to face challenges, manage stress, and build positive
-          habits. We believe that everyone deserves the opportunity to grow, thrive, and experience inner peace.
-          Through an empathetic and professional approach, we are here to help you discover the best solutions for
-          lasting mental and emotional well-being.
-        </p>
+        Shilpa Reddy brings to the table a diverse skill set that beautifully merges the principles of therapy, energy healing, and interior design. With eight years of background in interior design, Shilpa understands the profound impact our surroundings can have on our mental and emotional well-being. This insight led to the realisation that creating healing spaces is integral to the therapeutic process.
+        </p><br>
+        <p class="text-secondary" style="font-size: large;">Shilpa firmly believes that the environment we surround ourselves with is pivotal to our overall well-being. Their approach combines traditional therapeutic techniques with the transformative power of energy healing to create spaces that not only look beautiful but also feel uplifting and nurturing.</p>
 
         <div class="row d-flex flex-column flex-md-row my-4">
           <div class="col d-flex justify-content-center justify-content-lg-start">
@@ -324,7 +369,7 @@
               </li>
               <li class="d-flex align-items-start fw-bolder mb-2">
                 <i class="bi bi-check-circle-fill text-primary-color fs-4 me-2"></i>
-                <h5 class="fw-bolder py-1">Emergency Service</h5>
+                <h5 class="fw-bolder py-1">Emotional Healing</h5>
               </li>
             </ul>
           </div>
@@ -332,11 +377,11 @@
             <ul class="list-unstyled font-1">
               <li class="d-flex align-items-start fw-bolder mb-2">
                 <i class="bi bi-check-circle-fill text-primary-color fs-4 me-2"></i>
-                <h5 class="fw-bolder py-1">Mental Satisfaction</h5>
+                <h5 class="fw-bolder py-1">Inner Peace</h5>
               </li>
               <li class="d-flex align-items-start fw-bolder mb-2">
                 <i class="bi bi-check-circle-fill text-primary-color fs-4 me-2"></i>
-                <h5 class="fw-bolder py-1">Psychologists Services</h5>
+                <h5 class="fw-bolder py-1">Certified Sessions</h5>
               </li>
             </ul>
           </div>
@@ -347,87 +392,254 @@
           strength to rise is greater than the pain</p>
 
         <div class="d-flex align-items-center justify-content-center justify-content-xl-start gap-3">
-          <img src="./assets/image/Signature.png" alt="Signature" style="height: 100px;">
-          <a href="about-us.php" class="btn btn-primary-solid">Read More</a>
+        
+          <a href="about-us.html" class="btn btn-primary-solid">Read More</a>
         </div>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- #about end -->
+ <!--what is RTT START-->
+ <section class="section about-section pb-5 my-5">
+    <div class="b-container">
+      <div class="row align-items-center g-5">
+        <!-- Left Image Side -->
+        <div class="col-xl-4 d-flex position-relative">
+          <div class="position-relative mx-auto img-container">
+            <!-- Primary Image -->
+            <div class="ratio-wrapper-429">
+              <img src="./assets/image/rrt-img.png" alt="About Us"
+                class="w-100 h-100 object-fit-cover position-absolute top-0 start-0 rounded-5" data-aos="fade-right"
+                data-aos-easing="ease-in-sine" data-aos-delay="500" data-aos-duration="1000">
+            </div>
+          </div>
+        </div>
+        <!-- Center Text Side -->
+        <div class="col-xl-8">
+          <div class="row">
+            <!-- <h6 class="text-primary-color fw-semibold mb-2">A</h6> -->
+            <h2 class="font-1 mb-4" style="font-weight: 800;">What is RTT</h2>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-7">
+              <ul class="list-unstyled fs-5">
+                <li class="d-flex align-items-start mb-2">
+                  <i class="bi bi-chevron-right text-primary-color me-2 py-3"></i>
+                  <span>RTT® is a powerful and effective hybrid therapy created by Marisa Peer, a globally acclaimed therapist, bestselling author, award-winning speaker with clientele ranging from Hollywood celebrities, CEOs, royalty, and Olympic athletes. She now teaches this method to thousands of students worldwide</span>
+                </li>
+                <li class="d-flex align-items-start mb-2">
+                  <i class="bi bi-chevron-right text-primary-color me-2 py-3"></i>
+                  <span>RTT® therapy is based on the science of neuroplasticity and delivers fast, effective results by combining the most effective NLP principles with CBT, psychotherapy, and hypnotherapy to create a uniquely powerful therapy that helps people overcome their issues.</span>
+                </li>
+                <!-- <li class="d-flex align-items-start mb-2">
+                  <i class="bi bi-chevron-right text-primary-color me-2 py-3"></i>
+                  <span>Incorporating the principles of feng shui and energy balancing, Shilpa ensures that the energy within you flows smoothly, promoting a sense of vitality. Also, combining other modalities like RTT Hypnotherapy, The Silva Mind Control Method and Reiki Healing makes Shilpa approach therapy and coaching holistically and bespoke.</span>
+                </li> -->
+                <!-- <li class="d-flex align-items-start mb-2">
+                  <i class="bi bi-chevron-right text-primary-color me-2 py-3"></i>
+                  <span>Emotional strength shapes how we live, connect, and move forward confidently.</span>
+                </li> -->
+              </ul>
+            </div>
+            
+            <div class="col-12 col-md-5 mt-sm-4" data-aos="fade-up" data-aos-easing="ease-in-sine"
+              data-aos-delay="500" data-aos-duration="1000">
+              <div class="card bg-gradient-primary p-4 rounded-5 border-0">
+                <div class="card-body text-white">
+                  <h4 class="font-1" style="font-weight: 900;">Get More About RTT</h4>
+                  <div class="row mt-4">
+                    
+                    <!-- <div class="mb-4 fs-5">
+                      <i class="bi bi-check-circle-fill text-secondary-color-2 me-2"></i>
+                      Free Consultation
+                    </div> -->
+                    <!-- <div class="mb-4 fs-5">
+                      <i class="bi bi-check-circle-fill text-secondary-color-2 me-2"></i>
+                      Mental Satisfaction
+                    </div> -->
+                    <div class="video-box">
+          <div class="ratio ratio-16x9">
+            <!-- <iframe id="youtubeFrame" src="https://www.youtube.com/embed/N3Te3HeEFoA?si=YT6iTnj0qgbxYQ-H"
+              title="YouTube video" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/3Rp3fMWhj-4?si=0WGtJ94B2pxojypX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+                    <div class="mb-4 fs-5 px-5">
+                      <i class="bi bi-check-circle-fill text-secondary-color-2 me-2"></i>
+                      Watch Video
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ <!--what is RTT end-->
 
 <!-- <?php include("./partials/section/consult.php"); ?> -->
  <!-- Consult Section -->
-<section class="section py-5 text-white bg-gradient-secondary my-5">
+  <section class="section py-5 text-white bg-gradient-secondary my-5">
   <div class="b-container">
-    <div class="row justify-content-center text-center text-xl-start my-5">
-      <div class="col-12 col-xl-7">
-        <h6 class="text-primary-color fw-semibold mb-2">HOW WE WORK ?</h6>
-        <h2 class="font-1 mb-4" style="font-weight: 800;">
-          Here For Your <span class="text-primary-color">Health</span>,<br>
-          <span class="text-primary-color">Here</span> For Your Heart
-        </h2>
-      </div>
-      <div class="col-12 col-xl-5 mt-4 mt-md-0">
-        <p class="mb-4" style="font-size: large;">We offer compassionate care, combining physical and emotional
-          support to help you thrive in every aspect.</p>
-        <a href="contact-us.php" class="btn btn-primary-solid">Get Consult Now</a>
-      </div>
+  <style>
+  .left-bg {
+    background-image: url('./assets/image/happy-face-img2.jpg'); 
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    padding: 40px 20px;
+    min-height: 500px;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .left-bg h2 {
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 1.4;
+  }
+
+  .left-bg span {
+    color: #17BEBB;
+  }
+
+  .right-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .right-content h4 {
+    color: #17BEBB;
+    margin-bottom: 15px;
+  }
+
+  .btn-book {
+    background-color: #17BEBB;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+    position: relative;
+  }
+
+  .btn-book::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 10px;
+    width: 100%;
+    height: 10px;
+    background-color: #f68dbb;
+    z-index: -1;
+    border-radius: 5px;
+  }
+
+  @media (max-width: 767px) {
+    .left-bg {
+      min-height: 300px;
+      font-size: 18px;
+      text-align: center;
+      padding: 30px 15px;
+    }
+
+    .left-bg h2 {
+      font-size: 22px;
+    }
+
+    .right-content {
+      text-align: center;
+    }
+
+    .btn-book {
+      font-size: 16px;
+      padding: 10px 20px;
+    }
+  }
+</style>
+
+<div class="row justify-content-center align-items-center my-5">
+  <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+    <div class="left-bg">
+      <h2>
+        Looking To <span>Receive</span>,<br>
+        Therapy Services?
+      </h2>
     </div>
+  </div>
+  <div class="col-12 col-lg-6 right-content">
+    <p>We guide you through deep inner work, helping you release emotional blocks and build clarity, confidence, and peace from within.</p>
+    <h4>Book a FREE consultation here​</h4>
+    <a href="contact-us.html" class="btn-book">BOOK A CONSULTATION</a>
+  </div>
+</div>
 
     <hr class="border-white solid border-2 my-5">
 
     <div class="row text-white mb-0 mb-xl-5 pt-5">
       <div class="step-box col-12 col-lg-4" data-aos="fade-right" data-aos-easing="linear" data-aos-delay="500"
         data-aos-duration="1000">
-        <h1>01</h1>
-        <h3>Listen &amp; Understand</h3>
-        <p>Your wellness journey matters. We’re dedicated to supporting both your mental clarity and emotional
-          strength every step forward.</p>
+        <h1 >01</h1>
+        <h3>Book your free consultation call</h3>
+                 <p>Book your free consultation call. This confidential session helps you understand the value of the process before committing.</p><br>
+        <p>We respect your time and aim to ensure the session is valuable, whether or not we work together further.</p>
       </div>
       <div class="step-box col-12 col-lg-4" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="500"
         data-aos-duration="1000">
         <h1>02</h1>
-        <h3>Create A Tailored Plan</h3>
-        <p>From everyday stress to life’s hardest moments, our team stands ready to support your healing and overall
-          well-being.</p>
+        <h3>Schedule your 1:1 hypnotherapy session</h3>
+        <p>Schedule your 1:1 hypnotherapy session (up to 90 mins) via Zoom or Google Meet. We use regression to uncover root causes and reframe limiting beliefs.</p><br>
+        <p>Optional 60-minute coaching sessions are available for deeper transformation.</p>
       </div>
       <div class="step-box col-12 col-lg-4" data-aos="fade-left" data-aos-easing="linear" data-aos-delay="500"
         data-aos-duration="1000">
         <h1>03</h1>
-        <h3>Support &amp; Empower</h3>
-        <p>Empowering you to live well with care that nurtures your body, mind, and emotional peace every single
-          day.</p>
+        <h3>Practice. Reflect. Progress</h3>
+        <p>Listen to your personalised transformation audio daily for at least 21 days. Repetition strengthens new neural pathways.</p><br>
+        <p>Continue with follow-up coaching sessions as needed.</p>
       </div>
     </div>
   </div>
 </section>
+
 <!-- #consult end -->
 
 <!-- Services Section -->
 <section class="section py-5">
   <div class="b-container text-center">
     <h6 class="text-primary-color fw-semibold mb-2">OUR SERVICES</h6>
-    <h2 class="display-5 font-1 mb-5" style="font-weight: 800;">Breaking Stigmas, Building Strength</h2>
+    <h2 class="display-5 font-1 mb-5" style="font-weight: 800;">Transforming Minds, Changing Lives</h2>
     <div class="row g-4 my-5">
       <!-- Card 1 -->
       <div class="col-12 col-md-6 col-xl-4">
         <div class="card border-0 rounded-5 overflow-hidden h-100 shadow-sm scale-hover" data-aos="fade-up"
           data-aos-easing="linear" data-aos-delay="250" data-aos-duration="1000">
-          <img src="./assets/image/Place-Holder-1920x1280.jpg" class="w-100"
+          <img src="./assets/image/services/1.png" class="w-100"
             style="height: 250px; transform: scale(1.5); object-position: center;" alt="Individual Therapy">
           <div class="bg-accent-color-2 text-start p-4 position-relative">
             <div class="position-absolute top-0 start-0 translate-middle-y"
               style="margin-top: 0; margin-left: 20px;">
-              <img src="./assets/image/icon/Icon1.png" alt="" width="100">
+              <!-- <img src="./assets/image/icon/Icon1.png" alt="" width="100"> -->
             </div>
-            <a href="service-detail.php"
+            <a href="addictions.html"
               class="btn btn-dark btn-lg rounded-pill position-absolute top-0 end-0 me-3 fw-medium scale-hover"
               style="margin-top: -25px;">Read
               More</a>
-            <h3 class="font-1 mt-5" style="font-weight: 800;">Individual Therapy</h3>
+            <h3  class="font-1 mt-5" style="font-weight: 800;">Addictions</h3>
             <hr class="border-primary border-1 opacity-100 w-100 my-4">
-            <p class="mb-3">Tailored guidance crafted to meet your unique needs and goals effectively.</p>
+            <p class="mb-3">Struggling with unwanted habits? Hypnotherapy helps break patterns gently and restores your inner balance, peace, and control.</p>
           </div>
         </div>
       </div>
@@ -435,20 +647,20 @@
       <div class="col-12 col-md-6 col-xl-4">
         <div class="card border-0 rounded-5 overflow-hidden h-100 shadow-sm scale-hover" data-aos="fade-up"
           data-aos-easing="linear" data-aos-delay="500" data-aos-duration="1000">
-          <img src="./assets/image/Place-Holder-1920x1280.jpg" class="w-100"
+          <img src="./assets/image/services/healing-img1.png" class="w-100"
             style="height: 250px; transform: scale(1.5); object-position: center;" alt="Group Counseling">
           <div class="bg-accent-color-2 text-start p-4 position-relative">
             <div class="position-absolute top-0 start-0 translate-middle-y"
               style="margin-top: 0; margin-left: 20px;">
-              <img src="./assets/image/icon/Icon2.png" alt="" width="100">
+              <!-- <img src="./assets/image/icon/Icon2.png" alt="" width="100"> -->
             </div>
-            <a href="service-detail.php"
+            <a href="healing.html"
               class="btn btn-dark btn-lg rounded-pill position-absolute top-0 end-0 me-3 fw-medium scale-hover"
               style="margin-top: -25px;">Read
               More</a>
-            <h3 class="font-1 mt-5" style="font-weight: 800;">Group Counseling</h3>
+            <h3 class="font-1 mt-5" style="font-weight: 800;">Healing</h3>
             <hr class="border-primary border-1 opacity-100 w-100 my-4">
-            <p class="mb-3">Professional support designed to guide emotional well-being every single day.</p>
+            <p class="mb-3">Discover deep emotional and physical healing through guided hypnotherapy that calms the mind, balances energy, and restores clarity.</p>
           </div>
         </div>
       </div>
@@ -456,23 +668,91 @@
       <div class="col-12 col-xl-4">
         <div class="card border-0 rounded-5 overflow-hidden h-100 shadow-sm scale-hover" data-aos="fade-up"
           data-aos-easing="linear" data-aos-delay="750" data-aos-duration="1000">
-          <img src="./assets/image/Place-Holder-1920x1280.jpg" class="w-100"
+          <img src="./assets/image/services/law-of-attraction.png" class="w-100"
             style="height: 250px; transform: scale(1.5); object-position: center;" alt="Stress Management">
           <div class="bg-accent-color-2 text-start p-4 position-relative">
             <div class="position-absolute top-0 start-0 translate-middle-y"
               style="margin-top: 0; margin-left: 20px;">
-              <img src="./assets/image/icon/Icon3.png" alt="" width="100">
+              <!-- <img src="./assets/image/icon/Icon3.png" alt="" width="100"> -->
+            </div>
+            <a href="law-of-attraction.html"
+              class="btn btn-dark btn-lg rounded-pill position-absolute top-0 end-0 me-3 fw-medium scale-hover"
+              style="margin-top: -25px;">Read
+              More</a>
+            <h3 class="font-1 mt-5" style="font-weight: 800;">Law Of Attraction</h3>
+            <hr class="border-primary border-1 opacity-100 w-100 my-4">
+            <p class="mb-3">Align your thoughts with your desires through focused hypnotherapy that rewires beliefs and attracts clarity, abundance, and success.</p>
+          </div>
+        </div>
+      </div>
+      <!--card 4 start-->
+      <div class="col-12 col-xl-4">
+        <div class="card border-0 rounded-5 overflow-hidden h-100 shadow-sm scale-hover" data-aos="fade-up"
+          data-aos-easing="linear" data-aos-delay="750" data-aos-duration="1000">
+          <img src="./assets/image/services/phobias-and-fears.png" class="w-100"
+            style="height: 250px; transform: scale(1.5); object-position: center;" alt="Stress Management">
+          <div class="bg-accent-color-2 text-start p-4 position-relative">
+            <div class="position-absolute top-0 start-0 translate-middle-y"
+              style="margin-top: 0; margin-left: 20px;">
+              <!-- <img src="./assets/image/icon/Icon3.png" alt="" width="100"> -->
             </div>
             <a href="service-detail.php"
               class="btn btn-dark btn-lg rounded-pill position-absolute top-0 end-0 me-3 fw-medium scale-hover"
               style="margin-top: -25px;">Read
               More</a>
-            <h3 class="font-1 mt-5" style="font-weight: 800;">Stress Management</h3>
+            <h3 class="font-1 mt-5" style="font-weight: 800;">Overcoming Fears</h3>
             <hr class="border-primary border-1 opacity-100 w-100 my-4">
-            <p class="mb-3">Empowering digital resources to build healthy habits independently.</p>
+            <p class="mb-3">Break free from hidden fears with gentle hypnotherapy that rewires the mind, builds confidence, and brings emotional freedom</p>
           </div>
         </div>
       </div>
+      <!---card 4 end-->
+      <!--card 5 start-->
+      <div class="col-12 col-xl-4">
+        <div class="card border-0 rounded-5 overflow-hidden h-100 shadow-sm scale-hover" data-aos="fade-up"
+          data-aos-easing="linear" data-aos-delay="750" data-aos-duration="1000">
+          <img src="./assets/image/services/5.png" class="w-100"
+            style="height: 250px; transform: scale(1.5); object-position: center;" alt="Stress Management">
+          <div class="bg-accent-color-2 text-start p-4 position-relative">
+            <div class="position-absolute top-0 start-0 translate-middle-y"
+              style="margin-top: 0; margin-left: 20px;">
+              <!-- <img src="./assets/image/icon/Icon3.png" alt="" width="100"> -->
+            </div>
+            <a href="service-detail.php"
+              class="btn btn-dark btn-lg rounded-pill position-absolute top-0 end-0 me-3 fw-medium scale-hover"
+              style="margin-top: -25px;">Read
+              More</a>
+            <h3 class="font-1 mt-5" style="font-weight: 800;">Sleep Improvement</h3>
+            <hr class="border-primary border-1 opacity-100 w-100 my-4">
+            <p class="mb-3">Experience restful, deep sleep through calming hypnotherapy that soothes the mind, reduces stress, and restores natural sleep cycles.</p>
+          </div>
+        </div>
+      </div>
+      <!--card 5 end-->
+      <!--card 6 start-->
+       <div class="col-12 col-xl-4">
+        <div class="card border-0 rounded-5 overflow-hidden h-100 shadow-sm scale-hover" data-aos="fade-up"
+          data-aos-easing="linear" data-aos-delay="750" data-aos-duration="1000">
+          <img src="./assets/image/services/7.png" class="w-100"
+            style="height: 250px; transform: scale(1.5); object-position: center;" alt="Stress Management">
+          <div class="bg-accent-color-2 text-start p-4 position-relative">
+            <div class="position-absolute top-0 start-0 translate-middle-y"
+              style="margin-top: 0; margin-left: 20px;">
+              <!-- <img src="./assets/image/icon/Icon3.png" alt="" width="100"> -->
+            </div>
+            <a href="service-detail.php"
+              class="btn btn-dark btn-lg rounded-pill position-absolute top-0 end-0 me-3 fw-medium scale-hover"
+              style="margin-top: -25px;">Read
+              More</a>
+            <h3 class="font-1 mt-5" style="font-weight: 800;">Self-Confidence</h3>
+            <hr class="border-primary border-1 opacity-100 w-100 my-4">
+            <p class="mb-3">Unlock your inner strength with hypnotherapy that dissolves self-doubt, builds belief, and empowers you to move forward boldly.
+
+</p>
+          </div>
+        </div>
+      </div>
+      <!--card 6 end-->
     </div>
   </div>
 </section>
@@ -480,74 +760,8 @@
 
 <!-- <?php include("./partials/section/color-appointment.php"); ?> -->
 <!-- Appointment Section -->
-<section class="section py-5 text-white bg-gradient-secondary my-5">
-  <div class="b-container">
-    <div class="row align-items-center g-4 pt-5">
-      <!-- Left content -->
-      <div class="col-12 col-xl-5 order-1 order-md-3 order-xl-1 text-white mt-5 text-center text-xl-start">
-        <p class="text-uppercase text-primary-color fs-5 fw-semibold mb-2">Why Choose Us ?</p>
-        <h2 class="font-1 display-5 mb-4" style="font-weight: 800;">
-          Restoring <span class="text-primary-color">Hope</span>, One<br>
-          Day <span class="text-primary-color">At A Time</span>
-        </h2>
-        <p class="mb-4" style="font-size: large;">Through consistent care and compassionate guidance, we help
-          individuals rediscover strength, build resilience, and move forward toward a brighter, healthier future at
-          their own pace.</p>
-        <ul class="list-unstyled font-1 text-center text-xl-start">
-          <li class="d-flex flex-row justify-content-center justify-content-xl-start mb-3">
-            <i class="bi bi-check-circle-fill text-primary-color fs-4 mb-2 mb-xl-0 me-2"></i>
-            <h5 class="fw-bolder py-1">Compassionate & Experienced Professionals</h5>
-          </li>
-          <li class="d-flex flex-row justify-content-center justify-content-xl-start mb-3">
-            <i class="bi bi-check-circle-fill text-primary-color fs-4 mb-2 mb-xl-0 me-2"></i>
-            <h5 class="fw-bolder py-1">Holistic Approach To Well-Being</h5>
-          </li>
-          <li class="d-flex flex-row justify-content-center justify-content-xl-start mb-3">
-            <i class="bi bi-check-circle-fill text-primary-color fs-4 mb-2 mb-xl-0 me-2"></i>
-            <h5 class="fw-bolder py-1">Safe & Supportive Environment</h5>
-          </li>
-        </ul>
-        <a href="appointment.php" class="btn btn-primary-solid mb-5">Make An Appointment</a>
-      </div>
 
-      <!-- Middle content -->
-      <div class="col-12 col-md-7 col-xl-5 order-2 order-md-1">
-        <div class="ratio ratio-1x1">
-          <img src="./assets/image/Place-Holder-1920x1280.jpg"
-            class="w-100 h-100 object-fit-cover position-absolute rounded-5" alt="Appointment" data-aos="fade-up"
-            data-aos-easing="linear" data-aos-delay="750" data-aos-duration="1000">
-        </div>
-      </div>
-      <!-- Right content -->
-      <div class="col-12 col-md-5 col-xl-2 d-flex flex-column gap-3 order-3 order-md-2 order-xl-3">
-        <div class="card bg-gradient-primary rounded-4 border-0" data-aos="fade-left" data-aos-easing="linear"
-          data-aos-delay="500" data-aos-duration="1000">
-          <div class="card-body text-center text-white p-3 font-1">
-            <div class="display-5"><i class="bi bi-emoji-smile-fill accent-secondary-color"></i></div>
-            <div class="mb-0 fs-2 fw-bold">100%</div>
-            <p class="mb-0">Satisfaction</p>
-          </div>
-        </div>
-        <div class="card bg-gradient-primary rounded-4 border-0" data-aos="fade-left" data-aos-easing="linear"
-          data-aos-delay="750" data-aos-duration="1000">
-          <div class="card-body text-center text-white p-3 font-1">
-            <div class="display-5"><i class="bi bi-hand-thumbs-up-fill accent-secondary-color"></i></div>
-            <div class="mb-0 fs-2 fw-bold">257+</div>
-            <p class="mb-0">Happy Patient</p>
-          </div>
-        </div>
-        <div class="card bg-gradient-primary rounded-4 border-0" data-aos="fade-left" data-aos-easing="linear"
-          data-aos-delay="1000" data-aos-duration="1000">
-          <div class="card-body text-center text-white p-3 font-1">
-            <div class="display-5"><i class="bi bi-person-plus-fill accent-secondary-color"></i></div>
-            <div class="mb-0 fs-2 fw-bold">10+</div>
-            <p class="mb-0">Expert Therapist</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+
 <!-- #appointment end -->
 <!-- <?php include("./partials/section/feedback.php"); ?> -->
 <!-- Feedback Section -->
@@ -562,9 +776,7 @@
         </h2>
       </div>
       <div class="col-12 col-lg-5 text-center text-lg-start mt-4 mt-md-0">
-        <p class="my-4 text-muted-color" style="font-size: large;">Healing isn’t rushed—it’s supported. Our team
-          walks beside you, offering understanding and tailored support to help you rebuild confidence and emotional
-          peace day by day.</p>
+        <p class="my-4 text-muted-color" style="font-size: large;">Transformation through hypnotherapy isn’t forced—it’s guided. We gently help you access your subconscious, release emotional blocks, and rebuild lasting confidence and calm—one session at a time</p>
       </div>
     </div>
 
@@ -582,14 +794,13 @@
                 <i class="bi bi-star-fill"></i>
               </div>
             </div>
-            <p class="fw-bold">"Thanks to the supportive team, I've learned how to manage my anxiety and
-              feel more in control of my life. I'm truly grateful for the care and guidance they provided."</p>
+            <p class="fw-bold">"I was stressed and unwell until Ms Shilpa recommended RTT. The session helped me heal past wounds and regain clarity. I now sleep better, feel calmer, and more confident. Truly grateful for the transformation. Her guidance made all the difference."</p>
             <div class="d-flex align-items-center mt-2">
-              <img src="./assets/image/Place-Holder-64x64.jpg" alt="Client 1" class="rounded-circle me-3"
-                style="width: 64px; height: 64px;">
+              <!-- <img src="./assets/image/Place-Holder-64x64.jpg" alt="Client 1" class="rounded-circle me-3"
+                style="width: 64px; height: 64px;"> -->
               <div class="mt-4">
-                <h5 class="font-1 fw-bold text-primary-color">Jessica M</h5>
-                <p class="text-muted-color">Digital Agency</p>
+                <h5 class="font-1 fw-bold text-primary-color">Mr.Srikanth</h5>
+                <!-- <p class="text-muted-color">Digital Agency</p> -->
               </div>
             </div>
           </div>
@@ -606,14 +817,13 @@
                 <i class="bi bi-star-fill"></i>
               </div>
             </div>
-            <p class="fw-bold">"The counseling sessions were a game-changer for me. The therapist was so
-              understanding, and I finally felt heard. I highly recommend their services to anyone struggling."</p>
+            <p class="fw-bold">"RTT with Shilpa was truly life-changing. I uncovered how childhood experiences shaped my personality and held me back. Through this process, I’ve learned to express myself with more confidence and finally feel at peace with my past. Grateful for the healing and clarity it brought"</p>
             <div class="d-flex align-items-center mt-2">
-              <img src="./assets/image/Place-Holder-64x64.jpg" alt="Client 2" class="rounded-circle me-3"
-                style="width: 64px; height: 64px;">
+              <!-- <img src="./assets/image/Place-Holder-64x64.jpg" alt="Client 2" class="rounded-circle me-3"
+                style="width: 64px; height: 64px;"> -->
               <div class="mt-4">
-                <h5 class="font-1 fw-bold text-primary-color">David L.</h5>
-                <p class="text-muted-color">Product Manager</p>
+                <h5 class="font-1 fw-bold text-primary-color">Ms.Kavitha</h5>
+                <!-- <p class="text-muted-color">Product Manager</p> -->
               </div>
             </div>
           </div>
@@ -630,14 +840,13 @@
                 <i class="bi bi-star-fill"></i>
               </div>
             </div>
-            <p class="fw-bold">"I joined one of their mindfulness workshops, and it helped me find a sense
-              of calm I didn’t know I could achieve. Their approach is practical and easy to follow."</p>
+            <p class="fw-bold">"Before working with Shilpa aunty, I felt lost, unmotivated, and struggled with low self-esteem. Her guided hypnotherapy helped me shift negative thoughts and rebuild confidence. Each session felt safe, supportive, and healing. I’m truly grateful for her unique approach—it helped me find joy again."</p>
             <div class="d-flex align-items-center mt-2">
-              <img src="./assets/image/Place-Holder-64x64.jpg" alt="Client 3" class="rounded-circle me-3"
-                style="width: 64px; height: 64px;">
+              <!-- <img src="./assets/image/Place-Holder-64x64.jpg" alt="Client 3" class="rounded-circle me-3"
+                style="width: 64px; height: 64px;"> -->
               <div class="mt-4">
-                <h5 class="font-1 fw-bold text-primary-color">Emily R.</h5>
-                <p class="text-muted-color">Content Creator</p>
+                <h5 class="font-1 fw-bold text-primary-color">Ms.Richa</h5>
+                <!-- <p class="text-muted-color">Content Creator</p> -->
               </div>
             </div>
           </div>
@@ -654,14 +863,35 @@
                 <i class="bi bi-star-fill"></i>
               </div>
             </div>
-            <p class="fw-bold">"From the first session, I knew I was in the right place. The personalized
-              care and constant support made a huge difference in my healing journey."</p>
+            <p class="fw-bold">"I used to be overwhelmed by exam fear, often breaking down during preparation. Shilpa helped me manage that anxiety through the Law of Attraction and gratitude. Her guidance made a huge difference—I now handle stress better and even manifest small wins. Truly grateful for her support and care."</p>
             <div class="d-flex align-items-center mt-2">
-              <img src="./assets/image/Place-Holder-64x64.jpg" alt="Client 4" class="rounded-circle me-3"
-                style="width: 64px; height: 64px;">
+              <!-- <img src="./assets/image/Place-Holder-64x64.jpg" alt="Client 4" class="rounded-circle me-3"
+                style="width: 64px; height: 64px;"> -->
               <div class="mt-4">
-                <h5 class="font-1 fw-bold text-primary-color">Michael S.</h5>
-                <p class="text-muted-color">Producer</p>
+                <h5 class="font-1 fw-bold text-primary-color">Dr.Parinitha</h5>
+                <!-- <p class="text-muted-color">Producer</p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="swiper-slide">
+          <div class="card feedback-card">
+            <div class="d-flex align-content-center mb-3">
+              <div class="mb-2 text-warning">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+            </div>
+            <p class="fw-bold">"Shilpa has been an incredible mentor who helped me overcome negative thinking and manage my anger. With her guidance, I healed emotionally and learned to manifest my desires. I’ve become a better version of myself—all thanks to her support and wisdom. Forever grateful."</p>
+            <div class="d-flex align-items-center mt-2">
+              <!-- <img src="./assets/image/Place-Holder-64x64.jpg" alt="Client 4" class="rounded-circle me-3"
+                style="width: 64px; height: 64px;"> -->
+              <div class="mt-4">
+                <h5 class="font-1 fw-bold text-primary-color">Shyam Suma Mohan</h5>
+                <!-- <p class="text-muted-color">Producer</p> -->
               </div>
             </div>
           </div>
@@ -673,120 +903,7 @@
 <!-- #feedback end -->
 <!-- <?php include("./partials/section/specialist.php"); ?> -->
 <!-- Teams Section -->
-<section class="section py-5 mt-5">
-  <div class="b-container">
-    <div class="row text-center">
-      <h6 class="text-primary-color fw-semibold mb-2">OUR SPECIALIST</h6>
-      <h2 class="font-1 mb-5" style="font-weight: 800;">Meet Our Senior<br>Therapist</h2>
-    </div>
-    <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4 mb-5">
-      <!-- Card 1 -->
-      <div class="col" data-aos="fade-right" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="1000">
-        <div class="position-relative rounded-5 transition-hover mx-auto img-container">
-          <div class="ratio-wrapper-419">
-            <img src="./assets/image/Place-Holder-1920x1280.jpg" alt="Ubeid Una"
-              class="rounded-5 w-100 h-100 position-absolute">
-          </div>
-          <div class="position-absolute w-75" style="margin-top: -9rem; margin-left: 12%;">
-            <div
-              class="bg-primary-color d-flex flex-column text-white py-3 align-items-center text-center rounded-5">
-              <div class="mb-2">
-                <h4 class="font-1 fw-bolder">Ubeid Una</h4>
-                <p class="mb-0">Psychologist</p>
-              </div>
-              <div class="social-box justify-content-center mb-2">
-                <a href="https://www.facebook.com" class="fs-6 rounded-1 py-1" style="width: 30px; height: 30px;"><i
-                    class="bi bi-facebook text-white"></i></a>
-                <a href="https://x.com" class="fs-6 rounded-1 py-1" style="width: 30px; height: 30px;"><i
-                    class="bi bi-twitter-x text-white"></i></a>
-                <a href="https://www.linkedin.com" class="fs-6 rounded-1 py-1" style="width: 30px; height: 30px;"><i
-                    class="bi bi-linkedin text-white"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Card 2 -->
-      <div class="col" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="1000">
-        <div class="position-relative rounded-5 transition-hover mx-auto  img-container">
-          <div class="ratio-wrapper-419">
-            <img src="./assets/image/Place-Holder-1920x1280.jpg" alt="Hafsha Jasmine"
-              class="rounded-5 w-100 h-100 position-absolute">
-          </div>
-          <div class="position-absolute w-75" style="margin-top: -9rem; margin-left: 12%;">
-            <div
-              class="bg-primary-color d-flex flex-column text-white py-3 align-items-center text-center rounded-5">
-              <div class="mb-2">
-                <h4 class="font-1 fw-bolder">Hafsha Jasmine</h4>
-                <p class="mb-0">Psychologist</p>
-              </div>
-              <div class="social-box justify-content-center mb-2">
-                <a href="https://www.facebook.com" class="fs-6 rounded-1 py-1" style="width: 30px; height: 30px;"><i
-                    class="bi bi-facebook text-white"></i></a>
-                <a href="https://x.com" class="fs-6 rounded-1 py-1" style="width: 30px; height: 30px;"><i
-                    class="bi bi-twitter-x text-white"></i></a>
-                <a href="https://www.linkedin.com" class="fs-6 rounded-1 py-1" style="width: 30px; height: 30px;"><i
-                    class="bi bi-linkedin text-white"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Card 3 -->
-      <div class="col" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="1000">
-        <div class="position-relative rounded-5 transition-hover mx-auto img-container">
-          <div class="ratio-wrapper-419">
-            <img src="./assets/image/Place-Holder-1920x1280.jpg" alt="Farina Amira"
-              class="rounded-5 w-100 h-100 position-absolute">
-          </div>
-          <div class="position-absolute w-75" style="margin-top: -9rem; margin-left: 12%;">
-            <div
-              class="bg-primary-color d-flex flex-column text-white py-3 align-items-center text-center rounded-5">
-              <div class="mb-2">
-                <h4 class="font-1 fw-bolder">Farina Amira</h4>
-                <p class="mb-0">Psychologist</p>
-              </div>
-              <div class="social-box justify-content-center mb-2">
-                <a href="https://www.facebook.com" class="fs-6 rounded-1 py-1" style="width: 30px; height: 30px;"><i
-                    class="bi bi-facebook text-white"></i></a>
-                <a href="https://x.com" class="fs-6 rounded-1 py-1" style="width: 30px; height: 30px;"><i
-                    class="bi bi-twitter-x text-white"></i></a>
-                <a href="https://www.linkedin.com" class="fs-6 rounded-1 py-1" style="width: 30px; height: 30px;"><i
-                    class="bi bi-linkedin text-white"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Card 4 -->
-      <div class="col" data-aos="fade-left" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="1000">
-        <div class="position-relative rounded-5 transition-hover mx-auto img-container">
-          <div class="ratio-wrapper-419">
-            <img src="./assets/image/Place-Holder-1920x1280.jpg" alt="Idayati Ilyas"
-              class="rounded-5 w-100 h-100 position-absolute">
-          </div>
-          <div class="position-absolute w-75" style="margin-top: -9rem; margin-left: 12%;">
-            <div
-              class="bg-primary-color d-flex flex-column text-white py-3 align-items-center text-center rounded-5">
-              <div class="mb-2">
-                <h4 class="font-1 fw-bolder">Idayati Ilyas</h4>
-                <p class="mb-0">Psychologist</p>
-              </div>
-              <div class="social-box justify-content-center mb-2">
-                <a href="https://www.facebook.com" class="fs-6 rounded-1 py-1" style="width: 30px; height: 30px;"><i
-                    class="bi bi-facebook text-white"></i></a>
-                <a href="https://x.com" class="fs-6 rounded-1 py-1" style="width: 30px; height: 30px;"><i
-                    class="bi bi-twitter-x text-white"></i></a>
-                <a href="https://www.linkedin.com" class="fs-6 rounded-1 py-1" style="width: 30px; height: 30px;"><i
-                    class="bi bi-linkedin text-white"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+
 <!-- #teams end -->
 <!-- <?php include("./partials/section/quotation.php"); ?> -->
 <!-- Quotes Section -->
@@ -907,9 +1024,7 @@
                   <h2 class="font-1" style="font-weight: 800;">
                     Need Any Help ? Get In Touch With Us
                   </h2>
-                  <p class="mt-4 text-muted-color" style="font-size: large;">Every small step counts. We’re
-                    committed to walking with you through difficult moments, encouraging progress, and nurturing
-                    your journey toward lasting mental and emotional recovery.</p>
+                  <p class="mt-4 text-muted-color" style="font-size: large;">Every small shift in thought creates powerful change. We're here to gently guide you through hypnotherapy, helping you release inner blocks, build clarity, and move confidently toward emotional healing and lasting transformation.</p>
                 </div>
 
                 <div class="d-flex align-items-center gap-3 justify-content-start mt-3" data-aos="fade-left"
@@ -921,7 +1036,7 @@
                   </div>
                   <div class="ms-2 font-1 py-2">
                     <p class="fw-bold text-primary-color mb-0">Call us anytime</p>
-                    <h5 class="fw-bold">(555) 123-4567</h5>
+                    <h5 class="fw-bold">+91-8498057950</h5>
                   </div>
                 </div>
                 <div class="d-flex align-items-center gap-3 justify-content-start mt-3" data-aos="fade-left"
@@ -933,7 +1048,7 @@
                   </div>
                   <div class="ms-2 font-1 py-2">
                     <p class="fw-bold text-primary-color mb-0">Email us</p>
-                    <h5 class="fw-bold">Info@Yourmail.Com</h5>
+                    <h5 class="fw-bold">shilpa@gmail.com</h5>
                   </div>
                 </div>
                 <div class="d-flex align-items-center gap-3 justify-content-start" data-aos="fade-left"
@@ -945,7 +1060,7 @@
                   </div>
                   <div class="ms-2 font-1 py-2">
                     <p class="fw-bold text-primary-color mb-0">Our location</p>
-                    <h5 class="fw-bold">123 Serenity Lane, <br>Blissfield, CA 90210, US.</h5>
+                    <h5 class="fw-bold">Hyderabad, <br>Telangana,india.</h5>
                   </div>
                 </div>
               </div>
@@ -960,7 +1075,7 @@
 </section>
 <!-- #quotes end -->
 <!-- News Section -->
-<section class="section py-5 mb-5">
+<!-- <section class="section py-5 mb-5">
   <div class="b-container">
     <div class="row d-flex justify-content-lg-between justify-content-center text-center text-lg-start">
       <div class="col-12 col-lg-6">
@@ -1049,20 +1164,20 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- #news end -->
 </main>
 <!-- #main end -->
 
 <!-- <?php require('./partials/footer.php'); ?> -->
 <!-- Footer -->
-<footer class="footer py-5 px-4">
+<footer style="background-color: #06321f;" class="footer py-5 px-4">
   <div class="footer-background"></div>
   <div class="b-container">
     <div class="row row-cols-1 pt-5 px-0">
       <div class="footer-logo col-12 col-lg-3 mb-5 text-lg-start text-center">
-        <img src="./assets/image/Footer-Logo.png" alt="Footer Logo">
-        <p class="my-4">Professional, responsive, and soothing design for therapists, counselors, and life coaches.
+        <img src="./assets/image/lotus-logo.png" alt="Footer Logo">
+        <p class="my-4">Therapy and Coaching for Men and Women who are finding a path to transformation and clarity.
         </p>
         <div class="social-box d-flex justify-content-lg-start justify-content-center w-100">
           <a href="https://www.facebook.com" class="rounded-5 py-2" style="width: 40px; height: 40px;"><i
@@ -1075,18 +1190,18 @@
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
         <h4 class="font-1 fw-bolder text-secondary-color-2 mb-4">Contact</h4>
-        <p>123 Serenity Lane, Blissfield, CA 90210, United States</p>
-        <p>Info@yourmail.com</p>
-        <p>(555) 123-4567</p>
+        <p>Hyderabad, Telangana, India</p>
+        <p>shilpa@gmail.com</p>
+        <p>+91-8498057950</p>
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
         <h4 class="font-1 fw-bolder text-secondary-color-2 mb-4">Quick Links</h4>
         <ul class="d-flex flex-column p-0">
-          <li class="mb-2"><a href="index.php" class="links-secondary">Homepage</a></li>
-          <li class="mb-2"><a href="services.php" class="links-secondary">Services</a></li>
-          <li class="mb-2"><a href="appointment.php" class="links-secondary">Appointment</a></li>
-          <li class="mb-2"><a href="blogs.php" class="links-secondary">Blogs</a></li>
-          <li class="mb-2"><a href="faqs.php" class="links-secondary">FAQs</a></li>
+          <li class="mb-2"><a href="index.html" class="links-secondary">Home</a></li>
+          <li class="mb-2"><a href="about-us.html" class="links-secondary">About</a></li>
+          <li class="mb-2"><a href="role-of-hypnosis.html" class="links-secondary">Role of Hypnosis</a></li>
+          <li class="mb-2"><a href="contact-us.html" class="links-secondary">Contact</a></li>
+        
         </ul>
       </div>
       <div class="col-12 col-md-4 col-lg-3 mb-3 text-md-start text-center">
@@ -1123,7 +1238,7 @@
       </div>
     </div>
     <div class="row justify-content-center py-4 mt-4 border-top">
-      <p class="text-center w-100 mb-0">Copyright &copy; 2025 Widagdos. All Rights Reserved.</p>
+      <p class="text-center w-100 mb-0">Copyright &copy; 2025 The Patterns Company. All Rights Reserved.</p>
     </div>
   </div>
 </footer>

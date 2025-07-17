@@ -69,7 +69,7 @@
     </div>
     <h5 class="fw-bolder">Need Any Help ?</h5>
     <h3 class="mb-4" style="font-weight: 800;">
-      (555) 123-4567
+      +91-8498057950
     </h3>
     <a href="appointment.php" class="btn btn-block btn-primary-solid w-100">Or Make An
       Appointment</a>

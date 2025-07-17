@@ -1,10 +1,10 @@
 <!-- Footer -->
-<footer class="footer py-5 px-4">
+<footer style="background-color: #06321f;" class="footer py-5 px-4">
   <div class="footer-background"></div>
   <div class="b-container">
     <div class="row row-cols-1 pt-5 px-0">
       <div class="footer-logo col-12 col-lg-3 mb-5 text-lg-start text-center">
-        <img src="./assets/image/Footer-Logo.png" alt="Footer Logo">
+        <img src="./assets/image/lotus-logo.png" alt="Footer Logo">
         <p class="my-4">Professional, responsive, and soothing design for therapists, counselors, and life coaches.
         </p>
         <div class="social-box d-flex justify-content-lg-start justify-content-center w-100">
@@ -19,8 +19,8 @@
       <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
         <h4 class="font-1 fw-bolder text-secondary-color-2 mb-4">Contact</h4>
         <p>123 Serenity Lane, Blissfield, CA 90210, United States</p>
-        <p>Info@yourmail.com</p>
-        <p>(555) 123-4567</p>
+        <p>shilpa@gmail.com</p>
+        <p>+91-8498057950</p>
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
         <h4 class="font-1 fw-bolder text-secondary-color-2 mb-4">Quick Links</h4>

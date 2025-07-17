@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="icon" type="image/x-icon" href="./assets/image/lotus-logo.png">
+  <title>Float | Like | A | Lotus</title>
+  <!-- Animation On Scroll (AOS) -->
+  <link rel="stylesheet" href="./assets/css/vendor/aos.css" />
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="./assets/css/vendor/swiper-bundle.min.css" />
+  <!-- Bootstrap Icons CSS -->
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <style>
+    .how-we-work {
+      background: linear-gradient(to right, #b2c4f1, #ecc0d2);
+      padding: 4rem 1rem;
+      color: #fff;
+      text-align: center;
+    }
+
+    .how-we-work .section-title {
+      color: #1d2c6b;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      font-size: 0.875rem;
+      text-transform: uppercase;
+    }
+
+    .how-we-work h2 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+
+    .how-we-work h2 span {
+      color: #1d4ed8;
+    }
+
+    .how-we-work .intro-text {
+      max-width: 400px;
+      margin: 0 auto 2rem;
+      font-size: 1rem;
+    }
+
+    .how-we-work .btn {
+      background: #1d4ed8;
+      border: none;
+      padding: 0.75rem 2rem;
+      border-radius: 30px;
+      color: #fff;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+
+    .how-we-work .btn:hover {
+      background: #0f3ac9;
+    }
+
+    .how-we-work .steps {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 3rem;
+      gap: 2rem;
+    }
+
+    .how-we-work .step {
+      flex: 1 1 300px;
+      max-width: 350px;
+      text-align: center;
+    }
+
+    .how-we-work .step h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .how-we-work .step .number {
+      font-size: 3rem;
+      font-weight: 800;
+      color: #1d4ed8;
+      opacity: 0.2;
+      position: relative;
+    }
+
+    .how-we-work .step p {
+      margin-top: -1.5rem;
+      font-size: 1rem;
+      color: #f3f4f6;
+    }
+
+    @media (max-width: 768px) {
+      .how-we-work h2 {
+        font-size: 1.8rem;
+      }
+
+      .how-we-work .steps {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<div class="top-bar">
+  <div class="b-container">
+    <div class="d-flex justify-content-between align-items-center text-white px-3">
+      <div class="d-flex align-items-center">
+        <div class="pe-3">
+          <p class="my-1 py-1">Office Time : Mon - Fri 8:00 - 6:30</p>
+        </div>
+        &nbsp;|&nbsp;
+        <div class="ps-3">
+          <p class="my-1 py-1">Hyderabad, Telangana, India</p>
+        </div>
+      </div>
+      <div class="social-box align-items-center">
+        <a href="https://www.facebook.com" class="fs-5 rounded-2" style="width: 30px; height: 30px;"><i
+            class="bi bi-facebook text-primary-color"></i></a>
+        <a href="https://x.com" class="fs-5 rounded-2" style="width: 30px; height: 30px;"><i
+            class="bi bi-twitter-x text-primary-color"></i></a>
+        <a href="https://www.linkedin.com" class="fs-5 rounded-2" style="width: 30px; height: 30px;"><i
+            class="bi bi-linkedin text-primary-color"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- #top end -->
+  <!-- Header -->
+<header style="background: linear-gradient(to right, #b2c4f1, #ecc0d2);">
+  <div class="b-container">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light" aria-label="Offcanvas navbar large">
+      <div class="container-fluid">
+        <div class="logo-box">
+          <a href="index.html" class="navbar-brand">
+            <img src="./assets/image/lotus-logo-updated.png" alt="Main Logo"></a>
+        </div>
+        <button class="navbar-toggler bg-primary-color border-0" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="bi bi-list text-white fs-2"></span>
+        </button>
+        <div class="offcanvas offcanvas-start bg-light" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header" id="offcanvasNavbarLabel">
+            <div class="logo-drawer">
+              <a href="index.html" class="navbar-brand"><img src="./assets/image/lotus-logo-updated.png" alt="Drawer Logo"
+                  class="img-fluid"></a>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav mx-auto mb-2 mb-xl-0 gap-xl-4 justify-content-center flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about-us.html">About</a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link" href="role-of-hypnosis.html">Role of Hypnosis</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Services
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="addictions.html">Addictions</a></li>
+                  <li><a class="dropdown-item" href="service-detail.php">Healing</a></li>
+                  <li><a class="dropdown-item" href="appointment.php">Law Of Attraction</a></li>
+                  <li><a class="dropdown-item" href="services.php">Overcoming Fears</a></li>
+                  <li><a class="dropdown-item" href="service-detail.php">Sleep Improvement</a></li>
+                  <li><a class="dropdown-item" href="appointment.php">Self-Confidence
+</a></li>
+                </ul>
+              </li>
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Pages
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="pricing.php">Pricing</a></li>
+                  <li><a class="dropdown-item" href="team.php">Team</a></li>
+                  <li><a class="dropdown-item" href="blogs.php">Blogs</a></li>
+                  <li><a class="dropdown-item" href="blog-detail.php">Blog Detail</a></li>
+                  <li><a class="dropdown-item" href="faqs.php">FAQs</a></li>
+                  <li><a class="dropdown-item" href="error-404.php">Error 404</a></li>
+                </ul>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="contact-us.html">Contact Us</a>
+              </li>
+            </ul>
+            <div class="mt-lg-3">
+              <a href="contact-us.html" class="btn btn-quotes">
+                <i class="bi bi-journal-bookmark-fill pe-2"></i>
+                Get Quotes</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- #navbar end -->
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero-section d-flex align-items-center"
+         style="background-image: url('./assets/image/role-of-hero-section.png'); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 100vh;">
+  <div class="container text-center text-white">
+    <h1 class="hero-title">Your Mind Matters,<br>Let’s Heal Together</h1>
+    <p class="hero-subtitle">We provide safe, supportive, and effective mental health care for every step of your journey.</p>
+    <a href="#consult" class="btn btn-primary hero-btn">Book a Free Consultation</a>
+  </div>
+</section>
+
+
+
+<body>
+  <!-- About Section -->
+  <section class="section about-section pb-5 my-5">
+    <div class="b-container">
+      <div class="row align-items-center g-5">
+        <!-- Left Image Side -->
+        <div class="col-xl-4 d-flex position-relative">
+          <div class="position-relative mx-auto img-container">
+            <!-- Primary Image -->
+            <div class="ratio-wrapper-429">
+              <img src="./assets/image/what-is-hypnosis-img.png" alt="About Us"
+                class="w-100 h-100 object-fit-cover position-absolute top-0 start-0 rounded-5" data-aos="fade-right"
+                data-aos-easing="ease-in-sine" data-aos-delay="500" data-aos-duration="1000">
+            </div>
+          </div>
+        </div>
+        <!-- Center Text Side -->
+        <div class="col-xl-8">
+          <div class="row">
+            <!-- <h6 class="text-primary-color fw-semibold mb-2">What is Hypnosis?</h6> -->
+            <h2 class="font-1 mb-4" style="font-weight: 800;">What is Hypnosis?</h2>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-7">
+              <ul class="list-unstyled fs-5">
+                <li class="d-flex align-items-start mb-2">
+                  <i class="bi bi-chevron-right text-primary-color me-2 py-3"></i>
+                  <span>Hypnosis is focused calm; the mind relaxes while awareness deepens.</span>
+                </li>
+                <li class="d-flex align-items-start mb-2">
+                  <i class="bi bi-chevron-right text-primary-color me-2 py-3"></i>
+                  <span>It gently quiets the noise so your inner truth can speak.
+</span>
+                </li>
+                <li class="d-flex align-items-start mb-2">
+                  <i class="bi bi-chevron-right text-primary-color me-2 py-3"></i>
+                  <span>Guided and safe, it unlocks your subconscious for healing and clarity.</span>
+                </li>
+                <li class="d-flex align-items-start mb-2">
+                  <i class="bi bi-chevron-right text-primary-color me-2 py-3"></i>
+                  <span>A natural way to shift thoughts, feelings, and behaviour with purpose.
+
+</span>
+                </li>
+              </ul>
+            </div>
+            <!-- <div class="col-12 col-md-5 mt-sm-4" data-aos="fade-up" data-aos-easing="ease-in-sine"
+              data-aos-delay="500" data-aos-duration="1000">
+              <div class="card bg-gradient-primary p-4 rounded-5 border-0">
+                <div class="card-body text-white">
+                  <h4 class="font-1" style="font-weight: 900;">Together, We overcome</h4>
+                  <div class="row mt-4">
+                    <div class="mb-4 fs-5">
+                      <i class="bi bi-check-circle-fill text-secondary-color-2 me-2"></i>
+                      Free Consultation
+                    </div>
+                    <div class="mb-4 fs-5">
+                      <i class="bi bi-check-circle-fill text-secondary-color-2 me-2"></i>
+                      Mental Satisfaction
+                    </div>
+                    <div class="mb-4 fs-5">
+                      <i class="bi bi-check-circle-fill text-secondary-color-2 me-2"></i>
+                      Emergency Service
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <section class="hypnosis-section py-5">
+  <div class="container">
+    <!-- Title -->
+    <h2 class="section-heading text-center mb-4">
+      The Role of Hypnosis in Healing Emotional Chaos ✋
+    </h2>
+
+    <!-- Description -->
+    <p class="intro-text text-center mx-auto mb-5">
+      Hypnosis is a powerful technique that brings relief to those facing emotional challenges. Contrary to myth, individuals remain fully conscious during hypnosis. It’s a state of deep relaxation where the mind is more open to positive suggestions, helping foster healing and transformation.
+    </p>
+
+    <!-- Key Benefits -->
+    <div class="row justify-content-center text-start mb-5">
+      <div class="col-md-6 col-lg-5">
+        <ul class="benefits-list list-unstyled">
+          <li><i class="bi bi-check-circle-fill me-2 text-primary"></i> Emotional Regulation</li>
+          <li><i class="bi bi-check-circle-fill me-2 text-primary"></i> Stress Reduction</li>
+          <li><i class="bi bi-check-circle-fill me-2 text-primary"></i> Building Resilience</li>
+          <li><i class="bi bi-check-circle-fill me-2 text-primary"></i> Unearthing Hidden Trauma</li>
+          <li><i class="bi bi-check-circle-fill me-2 text-primary"></i> Enhancing Self-Esteem</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Subsection: Hypnotherapy Benefits -->
+    <h3 class="section-subheading text-center mb-4">Benefits of Hypnotherapy ✋</h3>
+    <div class="row justify-content-center text-start">
+      <div class="col-md-6 col-lg-5">
+        <ul class="benefits-list list-unstyled">
+          <li><i class="bi bi-check-circle-fill me-2 text-primary"></i> Non-Invasive</li>
+          <li><i class="bi bi-check-circle-fill me-2 text-primary"></i> Customized Approach</li>
+          <li><i class="bi bi-check-circle-fill me-2 text-primary"></i> Holistic Healing</li>
+          <li><i class="bi bi-check-circle-fill me-2 text-primary"></i> Empowerment</li>
+        </ul>
+      </div>
+    </div>
+    <p class="intro-text text-center mx-auto mb-5">
+      In a world where chaos is all too common, hypnotherapy stands as a beacon of hope for those seeking healing and inner peace. By unlocking the potential of the subconscious mind, individuals can access powerful resources for transformation and growth.
+    </p>
+
+    <!-- CTA Button -->
+    <!-- <div class="text-center mt-4">
+      <a href="#consult" class="btn btn-primary px-4 py-2">Get Consult Now</a>
+    </div> -->
+  </div>
+</section>
+
+   
+
+
+  <!-- FAQ Section -->
+
+
+<footer style="background-color: #06321f;" class="footer py-5 px-4">
+  <div class="footer-background"></div>
+  <div class="b-container">
+    <div class="row row-cols-1 pt-5 px-0">
+      <div class="footer-logo col-12 col-lg-3 mb-5 text-lg-start text-center">
+        <img src="./assets/image/lotus-logo.png" alt="Footer Logo">
+        <p class="my-4">Therapy and Coaching for Men and Women who are finding a path to transformation and clarity.
+        </p>
+        <div class="social-box d-flex justify-content-lg-start justify-content-center w-100">
+          <a href="https://www.facebook.com" class="rounded-5 py-2" style="width: 40px; height: 40px;"><i
+              class="bi bi-facebook text-white"></i></a>
+          <a href="https://x.com" class="rounded-5 py-2" style="width: 40px; height: 40px;"><i
+              class="bi bi-twitter-x text-white"></i></a>
+          <a href="https://www.linkedin.com" class="rounded-5 py-2" style="width: 40px; height: 40px;"><i
+              class="bi bi-linkedin text-white"></i></a>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+        <h4 class="font-1 fw-bolder text-secondary-color-2 mb-4">Contact</h4>
+        <p>Hyderabad, Telangana, India</p>
+        <p>shilpa@gmail.com</p>
+        <p>+91-8498057950</p>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+        <h4 class="font-1 fw-bolder text-secondary-color-2 mb-4">Quick Links</h4>
+        <ul class="d-flex flex-column p-0">
+          <li class="mb-2"><a href="index.html" class="links-secondary">Home</a></li>
+          <li class="mb-2"><a href="about-us.html" class="links-secondary">About</a></li>
+          <li class="mb-2"><a href="role-of-hypnosis.html" class="links-secondary">Role of Hypnosis</a></li>
+          <li class="mb-2"><a href="contact-us.html" class="links-secondary">Contact</a></li>
+        
+        </ul>
+      </div>
+      <div class="col-12 col-md-4 col-lg-3 mb-3 text-md-start text-center">
+        <h4
+          class="font-1 fw-bolder text-secondary-color-2 mb-4 justify-content-md-start justify-content-center align-items-center mt-md-0 mt-sm-4">
+          Newsletter</h4>
+        <p class="fw-bolder">Get the latest news other tips.</p>
+        <!-- Success message -->
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+          <div id="liveToast" class="toast success_msg_subscribe text-bg-light" role="alert" aria-live="assertive"
+            aria-atomic="true">
+            <div class="d-flex">
+              <div class="toast-body">
+                <i class="bi bi-check-circle-fill"></i> Your Subscribe Send Successfully.
+              </div>
+              <button type="button" class="btn me-2 m-auto" data-bs-dismiss="toast" aria-label="Close">
+                <i class="bi bi-x-lg"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Subscribe form -->
+        <form class="d-flex flex-column w-100 gap-2 needs-validation" novalidate>
+          <input type="text" name="action" value="subscribe" hidden>
+          <input type="email" name="email" class="form-control form-control-lg rounded-5"
+            placeholder="Your email here" required>
+          <div class="invalid-feedback text-white">
+            Please provide a valid email format (e.g.,
+            user@example.com).
+          </div>
+          <button type="submit" class="btn btn-block btn-secondary-solid submit_subscribe">Subscribe
+            now</button>
+        </form>
+      </div>
+    </div>
+    <div class="row justify-content-center py-4 mt-4 border-top">
+      <p class="text-center w-100 mb-0">Copyright &copy; 2025 The Patterns Company. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Optional: Scripts -->
+  <script src="./assets/js/vendor/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

@@ -8,7 +8,7 @@
         </div>
         &nbsp;|&nbsp;
         <div class="ps-3">
-          <p class="my-1 py-1">123 Serenity Lane, Blissfield, CA 90210</p>
+          <p class="my-1 py-1">Hyderabad, Telangana, India</p>
         </div>
       </div>
       <div class="social-box align-items-center">
