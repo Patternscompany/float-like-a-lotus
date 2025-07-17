@@ -136,7 +136,7 @@ body {
 /* Typography                   */
 /* ---------------------------- */
 h1 {
-  font-size: 72px;
+  font-size: 40px;
 }
 
 h2 {
@@ -1048,7 +1048,7 @@ img {
 /* Hero Section */
 .hero-section {
   background: linear-gradient(to right, #b2c4f1, #ecc0d2);
-  padding: 6rem 1rem;
+  padding: 2rem 1rem;
   min-height: 90vh;
   display: flex;
   align-items: center;
