@@ -40,11 +40,34 @@
   --font-2:"Source Sans 3", sans-serif;
 }
 
+@font-face {
+  font-family: 'Baar Metanoia';
+  src: url('./fonts/BaarMetanoia-BWZ8.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Sacrifice Demo';
+  src: url('./fonts/SacrificeDemo-8Ox1B.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ananda Black Personal Use';
+  src: url('./fonts/AnandaBlackPersonalUseRegular-rg9Rx.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* ---------------------------- */
 /* General Styles               */
 /* ---------------------------- */
 body {
-  font-family: var(--font-2);
+  /* font-family: var(--font-2); */
+  font-family: 'Baar Metanoia';
   color: var(--text-color);
   background-color: #FFFFFF;
 }
@@ -54,7 +77,8 @@ body {
 }
 
 .bg-primary-color-2 {
-  background-color: var(--accent-color);
+  /* background-color: var(--accent-color); */
+  background-color: #F2BBC5;
 }
 
 .bg-secondary-color {
@@ -84,7 +108,7 @@ body {
 }
 
 .text-primary-color {
-  color: var(--primary-color);
+  color: #F291A3;
 }
 
 .text-black-color-2 {
@@ -112,7 +136,9 @@ body {
 }
 
 .font-1 {
-  font-family: var(--font-1);
+  /* font-family: var(--font-1); */
+  /* font-family: 'Sacrifice Demo'; */
+   font-family: 'Ananda Black Personal Use';
 }
 
 .font-2 {
@@ -269,7 +295,8 @@ img {
 .btn-quotes {
   width: 180px;
   /* background-color: var(--text-color); */
-   background-color: #e8be45;
+   /* background-color: #e8be45; */
+   background-color: #F291A3;
   color: #FFFFFF;
   font-size: 1.15rem;
   font-weight: 600;
