@@ -250,7 +250,8 @@ img {
 }
 
 .dropdown-item:hover {
-  color: var(--accent-color) !important;
+  /* color: var(--accent-color) !important; */
+  color: #F291A3;
   background-color: transparent;
 }
 
