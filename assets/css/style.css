@@ -208,7 +208,7 @@ img {
 /* ---------------------------- */
 .top-bar {
   /* background-color: var(--primary-color); */
-  background-color: #F291A3;
+  background-color: #06321f;
   /* padding-block: 1.2rem; */
   min-height: 44px;
 }
@@ -232,7 +232,7 @@ img {
 }
 
 .logo-box img{
-  max-height: 63px;
+  max-width: 120px;
 }
 
 .navbar-toggler:focus {
@@ -296,7 +296,8 @@ img {
   width: 180px;
   /* background-color: var(--text-color); */
    /* background-color: #e8be45; */
-   background-color: #F291A3;
+   /* background-color: #F291A3; */
+   background: linear-gradient(45deg, #d9bf68, #d5992d);
   color: #FFFFFF;
   font-size: 1.15rem;
   font-weight: 600;
@@ -824,7 +825,7 @@ img {
   }
 
   .logo-box img {
-    max-height: 86px;
+    max-width: 86px;
   }
 
   .logo-drawer img {
@@ -1075,7 +1076,7 @@ img {
 }
 /* Hero Section */
 .hero-section {
-  background: linear-gradient(to right, #b2c4f1, #ecc0d2);
+  background: linear-gradient(to right, #06321f,#ecc0d2 );
   padding: 2rem 1rem;
   min-height: 90vh;
   display: flex;
