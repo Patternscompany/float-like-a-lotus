@@ -180,8 +180,8 @@
 
       <!-- Right Image -->
       <div class="col position-relative text-center pt-lg-4 pt-xl-3">
-        <img src="./assets/image/lotus-img-updated.png" alt="Hero Talent" class="img-fluid position-relative"
-          style="z-index: 2; border-top-left-radius: 40%;border-bottom-right-radius: 40%; height: 500px; object-fit: cover;width:80%;">
+        <img src="./assets/image/lotus-img-updated.png" alt="Hero Talent" class="img-fluid position-relative lotus"
+          >
         <!-- Badge Review -->
         <!-- <div
           class="badge-cta position-absolute top-50 start-0 translate-middle-y bg-secondary-color py-3 px-4 rounded-5 text-white text-center d-none d-md-block"
@@ -207,7 +207,17 @@
   </div>
 </section>
 <!-- #hero end -->
-
+<style>
+  .lotus{
+    z-index: 2;border-radius: 20%; height: 500px; object-fit: cover;width:60%;
+  }
+  @media(max-width:992px){
+    .lotus{
+      border-radius: 20%;
+      width:100%;
+    }
+  }
+</style>
 <!-- Features Section -->
 <section class="section py-5">
   <div class="b-container">
