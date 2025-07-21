@@ -57,7 +57,7 @@
 
 @font-face {
   font-family: 'Ananda Black Personal Use';
-  src: url('./fonts/AnandaBlackPersonalUseRegular-rg9Rx.ttf') format('truetype');
+  src: url('./fonts/AnandaBlackPersonalUse-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
