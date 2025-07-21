@@ -37,7 +37,7 @@
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="services.php">Our Services</a></li>
                   <li><a class="dropdown-item" href="service-detail.php">Service Detail</a></li>
-                  <li><a class="dropdown-item" href="appointment.php">Appointment</a></li>
+                  <li><a class="dropdown-item" href="contact-us.html">Appointment</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">

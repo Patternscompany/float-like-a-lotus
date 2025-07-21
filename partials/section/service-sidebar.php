@@ -71,7 +71,7 @@
     <h3 class="mb-4" style="font-weight: 800;">
       +91-8498057950
     </h3>
-    <a href="appointment.php" class="btn btn-block btn-primary-solid w-100">Or Make An
+    <a href="contact-us.html" class="btn btn-block btn-primary-solid w-100">Or Make An
       Appointment</a>
   </div>
 </div>

@@ -26,7 +26,7 @@
             <h5 class="fw-bolder py-1">Safe & Supportive Environment</h5>
           </li>
         </ul>
-        <a href="appointment.php" class="btn btn-primary-solid mb-5">Make An Appointment</a>
+        <a href="contact-us.html" class="btn btn-primary-solid mb-5">Make An Appointment</a>
       </div>
 
       <!-- Middle content -->

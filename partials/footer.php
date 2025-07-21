@@ -27,7 +27,7 @@
         <ul class="d-flex flex-column p-0">
           <li class="mb-2"><a href="index.php" class="links-secondary">Homepage</a></li>
           <li class="mb-2"><a href="services.php" class="links-secondary">Services</a></li>
-          <li class="mb-2"><a href="appointment.php" class="links-secondary">Appointment</a></li>
+          <li class="mb-2"><a href="contact-us.html" class="links-secondary">Appointment</a></li>
           <li class="mb-2"><a href="blogs.php" class="links-secondary">Blogs</a></li>
           <li class="mb-2"><a href="faqs.php" class="links-secondary">FAQs</a></li>
         </ul>
