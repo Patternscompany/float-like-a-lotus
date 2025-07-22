@@ -60,8 +60,7 @@
             </ul>
             <div class="mt-lg-3">
               <a href="contact-us.html" class="btn btn-quotes">
-                <i class="bi bi-journal-bookmark-fill pe-2"></i>
-                Get Quotes</a>
+                <i class="bi bi-journal-bookmark-fill pe-2"></i>Book Now</a>
             </div>
           </div>
         </div>
