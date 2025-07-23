@@ -324,13 +324,13 @@ img {
   border: none;
   transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
 }
-
+/* 
 .btn-primary-solid:hover {
   background-color:#e8be45;
   color: #FFFFFF;
   border: none;
   transform: scale(1.1);
-}
+} */
 
 .btn-secondary-solid {
   /* background-color: var(--secondary-color); */
