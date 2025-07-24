@@ -55,12 +55,20 @@
   font-style: normal;
 }
 
-@font-face {
+/* @font-face {
   font-family: 'Ananda Black Personal Use';
   src: url('./fonts/AnandaBlackPersonalUse-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
+} */
+
+@font-face {
+  font-family: 'Monday Feelings';
+  src: url('./fonts/MondayFeelings-7BD2l.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
 }
+
 
 /* ---------------------------- */
 /* General Styles               */
@@ -138,7 +146,7 @@ body {
 .font-1 {
   /* font-family: var(--font-1); */
   /* font-family: 'Sacrifice Demo'; */
-   font-family: 'Ananda Black Personal Use';
+   /* font-family: 'Ananda Black Personal Use'; */
 }
 
 .font-2 {
