@@ -146,7 +146,7 @@ body {
 .font-1 {
   /* font-family: var(--font-1); */
   /* font-family: 'Sacrifice Demo'; */
-   /* font-family: 'Ananda Black Personal Use'; */
+   font-family: 'Ananda Black Personal Use';
 }
 
 .font-2 {
@@ -1320,3 +1320,37 @@ position: fixed;
 header{
   background-color: #06321f;
 }
+
+/* Remove default right-side submenu positioning */
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .submenu {
+  top: 100%; /* Show directly below the parent */
+  left: 0;
+  margin-top: 0;
+  position: absolute;
+  display: none;
+  z-index: 1000;
+}
+
+/* Show submenu on hover */
+.dropdown-submenu:hover .submenu {
+  display: block;
+}
+
+.dropdown-submenu .dropdown-menu.dropdown-sub-down {
+    top: 100%;
+    left: 0;
+    margin-top: 0;
+  }
+
+  .dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+  }
+
+  .dropdown-submenu .dropdown-toggle::after {
+    float: right;
+    margin-left: 5px;
+  }
