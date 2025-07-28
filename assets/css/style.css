@@ -1321,36 +1321,64 @@ header{
   background-color: #06321f;
 }
 
-/* Remove default right-side submenu positioning */
+/* Base positioning */
 .dropdown-submenu {
   position: relative;
 }
 
-.dropdown-submenu .submenu {
-  top: 100%; /* Show directly below the parent */
-  left: 0;
-  margin-top: 0;
+.dropdown-submenu .dropdown-sub-down {
+  top: 0;
+  left: 100%;
   position: absolute;
+  margin-top: 0;
   display: none;
   z-index: 1000;
 }
 
-/* Show submenu on hover */
-.dropdown-submenu:hover .submenu {
-  display: block;
-}
-
-.dropdown-submenu .dropdown-menu.dropdown-sub-down {
-    top: 100%;
-    left: 0;
-    margin-top: 0;
-  }
-
-  .dropdown-submenu:hover > .dropdown-menu {
+/* Show submenu on hover for desktop */
+@media (min-width: 992px) {
+  .dropdown-submenu:hover > .dropdown-sub-down {
     display: block;
   }
 
   .dropdown-submenu .dropdown-toggle::after {
+    display: inline-block;
+    margin-left: .5rem;
+    vertical-align: middle;
+    content: "";
+    border-top: .3em solid transparent;
+    border-right: 0;
+    border-bottom: .3em solid transparent;
+    border-left: .3em solid;
     float: right;
-    margin-left: 5px;
   }
+}
+
+/* Mobile behavior: override hover and use click logic */
+@media (max-width: 991.98px) {
+  .dropdown-submenu .dropdown-sub-down {
+    position: relative !important;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  .dropdown-submenu .dropdown-toggle::after {
+    float: right;
+  }
+
+  /* Optional: indent submenu items */
+  .dropdown-submenu .dropdown-sub-down a {
+    padding-left: 2rem;
+  }
+
+  /* Don't show on hover */
+  .dropdown-submenu:hover > .dropdown-sub-down {
+    display: none !important;
+  }
+
+  /* Show when toggled (we'll add a class via JS) */
+  .dropdown-submenu.show > .dropdown-sub-down {
+    display: block !important;
+  }
+}
