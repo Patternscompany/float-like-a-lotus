@@ -91,18 +91,7 @@
                 <li class="nav-item">
                   <a class="nav-link" href="testimonials.html">Testimonials</a>
                 </li>
-                <!-- <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Services
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="addictions.html">Hypnotherapy</a></li>
-                    <li><a class="dropdown-item" href="healing.html">Life Coaching</a></li>
-                    <li><a class="dropdown-item" href="law-of-attraction.html">Workshops</a></li>
-
-                  </ul>
-                </li> -->
+              
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                     aria-expanded="false">
@@ -128,8 +117,8 @@
                       <a class="dropdown-item dropdown-toggle" href="#">Life Coaching</a>
                       <ul class="dropdown-menu dropdown-sub-down">
                         <li><a class="dropdown-item" href="./high-performers.html">High Performers</a></li>
-                       
-    
+
+
                         <li><a class="dropdown-item" href="./coaching-children.html">Coaching Children</a></li>
                       </ul>
                     </li>
@@ -149,11 +138,7 @@
                   <a class="nav-link" href="contact-us.html">Contact Us</a>
                 </li>
               </ul>
-              <!-- <div class="mt-lg-3">
-                <a href="contact-us.html" class="btn btn-quotes">
-                  <i class="bi bi-journal-bookmark-fill pe-2"></i>
-                  Book Now</a>
-              </div> -->
+             
               <!-- Button -->
               <div class="mt-lg-3">
                 <button type="button" class="btn btn-quotes" data-bs-toggle="modal" data-bs-target="#bookNowModal">
@@ -200,33 +185,24 @@
                               Valid phone is required.
                             </div>
                           </div>
+                       
                           <div class="col-lg-6 col-sm-12">
-                            <label for="date" class="form-label fs-4 fw-bold">Date</label>
-                            <input type="date" class="form-control form-control-lg rounded-5" id="date" name="date"
-                              required>
+                            <label for="subject" class="form-label fs-4 fw-bold">Service</label>
+                            <select class="form-select form-select-lg rounded-5" id="subject" name="subject" required>
+                              <option value="" selected disabled>Select a service</option>
+                              <option value="Hypnotherapy">Hypnotherapy</option>
+                              <option value="Counseling">Life Coaching</option>
+                              <option value="Mindfulness Session">Work Shops</option>
+
+                            </select>
                             <div class="invalid-feedback">
-                              Valid date is required.
+                              Please select a service.
                             </div>
                           </div>
-                          <div class="col-lg-6 col-sm-12">
-                            <label for="time" class="form-label  fs-4 fw-bold">Time</label>
-                            <input type="time" class="form-control form-control-lg rounded-5" id="time" name="time"
-                              required>
-                            <div class="invalid-feedback">
-                              What time is required.
-                            </div>
-                          </div>
-                          <div class="col-lg-6 col-sm-12">
-                            <label for="subject" class="form-label  fs-4 fw-bold">Subject</label>
-                            <input type="text" class="form-control form-control-lg rounded-5" id="subject"
-                              placeholder="Your subject." name="subject" required>
-                            <div class="invalid-feedback">
-                              Valid subject is required.
-                            </div>
-                          </div>
+
                           <div class="col-12">
                             <label for="message" class="form-label  fs-4 fw-bold">Message</label>
-                            <textarea class="form-control form-control-lg rounded-5" id="message" name="message"
+                            <textarea style="height: 40px;" class="form-control form-control-lg rounded-5" id="message" name="message"
                               rows="5" placeholder="Tell us your story"></textarea>
                           </div>
                           <button type="submit" class="btn btn-block btn-primary-solid submit_form mt-4">Connect with a
@@ -320,29 +296,9 @@
             <p class="fs-6">
               Because like the lotus, you’re meant to bloom.
             </p>
-            <!-- <div
-          class="d-flex gap-3 align-items-center my-4 flex-nowrap justify-content-lg-start justify-content-center">
-          <a href="contact-us.html" role="button" class="btn btn-primary-solid">Book a Session</a>
-          <button class="btn btn-secondary-solid rounded-circle fs-2 p-2 btn-play" type="button"
-            style="width: 60px; height: 60px;">
-            <i class="bi bi-play-fill"></i>
-          </button>
-        </div> -->
+
           </div>
-          <!-- Video Overlay -->
-          <!-- <div id="videoOverlay" class="video-overlay d-none mt-0">
-        <button type="button" class="btn-close-overlay position-absolute top-0 end-0 m-3 text-white fs-2 border-0 bg-transparent"
-          aria-label="Close">
-          <i class="bi bi-x-lg"></i>
-        </button>
-        <div class="video-box">
-          <div class="ratio ratio-16x9">
-            <iframe id="youtubeFrame" src="https://www.youtube.com/embed/N3Te3HeEFoA?si=YT6iTnj0qgbxYQ-H"
-              title="YouTube video" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div> -->
-          <!-- #video end -->
+
 
           <!-- Right Image -->
           <div class="col position-relative text-center pt-lg-4 pt-xl-3">
@@ -763,7 +719,8 @@
                   More</a>
                 <h3 class="font-1 mt-5" style="font-weight: 800;">Depression</h3>
                 <hr class="border-primary border-1 opacity-100 w-100 my-4">
-                <p class="mb-3">Find relief from depression with gentle hypnotherapy that soothes the mind, uplifts emotions, and renews inner strength</p>
+                <p class="mb-3">Find relief from depression with gentle hypnotherapy that soothes the mind, uplifts
+                  emotions, and renews inner strength</p>
               </div>
             </div>
           </div>
@@ -784,7 +741,8 @@
                   More</a>
                 <h3 class="font-1 mt-5" style="font-weight: 800;">Anxiety</h3>
                 <hr class="border-primary border-1 opacity-100 w-100 my-4">
-                <p class="mb-3">Calm your mind and ease anxiety with focused hypnotherapy that rewires responses and restores peace, confidence, and control</p>
+                <p class="mb-3">Calm your mind and ease anxiety with focused hypnotherapy that rewires responses and
+                  restores peace, confidence, and control</p>
               </div>
             </div>
           </div>
@@ -805,7 +763,8 @@
                   More</a>
                 <h3 class="font-1 mt-5" style="font-weight: 800;">Stress</h3>
                 <hr class="border-primary border-1 opacity-100 w-100 my-4">
-                <p class="mb-3">Release built-up stress with calming hypnotherapy that resets the mind, restores balance, and promotes inner peace</p>
+                <p class="mb-3">Release built-up stress with calming hypnotherapy that resets the mind, restores
+                  balance, and promotes inner peace</p>
               </div>
             </div>
           </div>
