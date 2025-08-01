@@ -3784,7 +3784,7 @@ fieldset:disabled .btn {
 
 .btn-link {
     --bs-btn-font-weight: 400;
-    --bs-btn-color: var(--bs-link-color);
+    --bs-btn-color:#00bcd4;
     --bs-btn-bg: transparent;
     --bs-btn-border-color: transparent;
     --bs-btn-hover-color: var(--bs-link-hover-color);

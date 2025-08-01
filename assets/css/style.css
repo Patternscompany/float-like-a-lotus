@@ -112,7 +112,7 @@ body {
 }
 
 .bg-gradient-secondary {
-  background: linear-gradient(45deg, #8BACEE, #F7D3DA);
+  /* background: linear-gradient(45deg, #8BACEE, #F7D3DA); */
 }
 
 .text-primary-color {
@@ -1009,7 +1009,7 @@ img {
 }
 
 .faq-label {
-  color: #1d2c6b;
+  /* color: #1d2c6b; */
   font-weight: 600;
   font-size: 0.9rem;
   margin-bottom: 0.5rem;
@@ -1031,7 +1031,7 @@ img {
   display: flex;
   align-items: center;
   gap: 1rem;
-  background-color: #1d4ed8;
+  background-color: #cc6699;
   padding: 0.5rem 1.2rem;
   border-radius: 50px;
   width: max-content;
@@ -1284,7 +1284,7 @@ body p{
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #0d6efd;
+  background-color:#00bcd4;
   opacity: 0.5;
   transition: opacity 0.4s ease;
   margin-bottom: 0;
@@ -1302,7 +1302,7 @@ body p{
 }
 
 .faq-title span {
-  color: #0d6efd;
+  color: #00bcd4;
 }
 
 .testimonial-box {
@@ -1382,3 +1382,76 @@ header{
     display: block !important;
   }
 }
+
+
+
+.therapy-banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 3rem 2rem;
+  background: linear-gradient(to right, #b2c4f1, #ecc0d2);
+}
+
+.image-col {
+  flex: 1;
+  min-width: 300px;
+  max-width: 450px;
+  text-align: center;
+}
+
+.image-col img {
+  width: 100%;
+   height: 500px;
+  
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.text-col {
+  flex: 1;
+  min-width: 300px;
+  max-width: 550px;
+  text-align: center;
+}
+
+.main-heading {
+  font-family:'Baar Metanoia';
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.subheading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #00bcd4;
+}
+
+.highlight {
+  color: #00bcd4;
+}
+
+.underline {
+  width: 70px;
+  height: 5px;
+  background-color: #ffc107;
+  margin: 1rem auto;
+  border-radius: 4px;
+}
+
+.consult-btn {
+  background-color: #00bcd4;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 5px 5px 0 #ff69b4;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+

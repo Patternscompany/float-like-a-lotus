@@ -7,14 +7,17 @@
         <img src="./assets/image/lotus-logo.png" alt="Footer Logo">
         <p class="my-4">Professional, responsive, and soothing design for therapists, counselors, and life coaches.
         </p>
-        <div class="social-box d-flex justify-content-lg-start justify-content-center w-100">
-          <a href="https://www.facebook.com" class="rounded-5 py-2" style="width: 40px; height: 40px;"><i
-              class="bi bi-facebook text-white"></i></a>
-          <a href="https://x.com" class="rounded-5 py-2" style="width: 40px; height: 40px;"><i
-              class="bi bi-twitter-x text-white"></i></a>
-          <a href="https://www.linkedin.com" class="rounded-5 py-2" style="width: 40px; height: 40px;"><i
-              class="bi bi-linkedin text-white"></i></a>
-        </div>
+      <div class="social-box d-flex justify-content-lg-start justify-content-center w-100">
+  <a href="#" class="rounded-5 py-2" style="width: 40px; height: 40px;">
+    <i class="bi bi-facebook text-white"></i>
+  </a>
+  <a href="https://www.instagram.com/float_like_a_lotus_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="rounded-5 py-2" style="width: 40px; height: 40px;">
+    <i class="bi bi-instagram text-white"></i>
+  </a>
+  <a href="#" class="rounded-5 py-2" style="width: 40px; height: 40px;">
+    <i class="bi bi-linkedin text-white"></i>
+  </a>
+</div>
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
         <h4 class="font-1 fw-bolder text-secondary-color-2 mb-4">Contact</h4>
