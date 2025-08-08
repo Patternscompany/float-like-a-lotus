@@ -1458,3 +1458,33 @@ header{
 .abt-us{
   color: #00bcd4;
 }
+
+h1, h2, h3,h4, h5, h6{
+font-family: 'Baar Metanoia';
+}
+
+
+.whatsapp-btn {
+  position: fixed;
+  right: 12px;
+  bottom: 6rem;
+  display: grid;
+  place-items: center;
+  background: #25d366;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  z-index: 10000;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.whatsapp-btn a {
+  color: white;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.whatsapp-btn:hover {
+  background: #1ebe5a;
+}
