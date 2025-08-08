@@ -7622,7 +7622,8 @@ fieldset:disabled .btn {
     left: 0;
     width: var(--bs-offcanvas-width);
     border-right: var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color);
-    transform: translateX(-100%)
+    transform: translateX(-100%);
+    background-color: black;
 }
 
 .offcanvas.offcanvas-end {
@@ -7689,7 +7690,8 @@ fieldset:disabled .btn {
 
 .offcanvas-header .btn-close {
     padding: calc(var(--bs-offcanvas-padding-y) * .5) calc(var(--bs-offcanvas-padding-x) * .5);
-    margin: calc(-.5 * var(--bs-offcanvas-padding-y)) calc(-.5 * var(--bs-offcanvas-padding-x)) calc(-.5 * var(--bs-offcanvas-padding-y)) auto
+    margin: calc(-.5 * var(--bs-offcanvas-padding-y)) calc(-.5 * var(--bs-offcanvas-padding-x)) calc(-.5 * var(--bs-offcanvas-padding-y)) auto;
+    background-color:white;
 }
 
 .offcanvas-title {
