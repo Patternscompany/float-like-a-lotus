@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+<body>
 <!-- WhatsApp Start -->
 <div class="whatsapp-btn">
   <a href="https://wa.me/+918498057950" target="_blank">
@@ -470,5 +471,37 @@
       </div>
     </div>
   </footer>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const isMobile = () => window.innerWidth < 992;
 
+        // Handle submenu toggle
+        document.querySelectorAll('.dropdown-submenu > .dropdown-toggle').forEach(toggle => {
+          toggle.addEventListener('click', function (e) {
+            if (isMobile()) {
+              e.preventDefault();
+              e.stopPropagation(); // 👈 prevents closing the whole dropdown
+
+              const parent = this.closest('.dropdown-submenu');
+              const allSubmenus = parent.parentElement.querySelectorAll('.dropdown-submenu');
+
+              // Close other open submenus in the same level
+              allSubmenus.forEach(item => {
+                if (item !== parent) item.classList.remove('show');
+              });
+
+              parent.classList.toggle('show');
+            }
+          });
+        });
+
+        // Optional: close all submenus when main dropdown closes
+        document.querySelectorAll('.dropdown').forEach(drop => {
+          drop.addEventListener('hide.bs.dropdown', function () {
+            this.querySelectorAll('.dropdown-submenu').forEach(sub => sub.classList.remove('show'));
+          });
+        });
+      });
+    </script>
+</body>
 </html>
