@@ -23,7 +23,7 @@
         <h4 class="font-1 fw-bolder text-secondary-color-2 mb-4">Contact</h4>
         <p>123 Serenity Lane, Blissfield, CA 90210, United States</p>
         <p>shilpa@gmail.com</p>
-        <p>+91-8498057950</p>
+        <p>+918498057950 / +917416625300</p>
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
         <h4 class="font-1 fw-bolder text-secondary-color-2 mb-4">Quick Links</h4>
