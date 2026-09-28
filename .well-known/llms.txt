@@ -47,6 +47,7 @@
 - [The Role of Hypnosis](https://floatlikealotus.com/role-of-hypnosis.html): In-depth guide on how hypnotherapy accesses the subconscious mind.
 - [Client Testimonials](https://floatlikealotus.com/testimonials.html): Verified transformation stories and feedback from clients.
 - [Contact Us](https://floatlikealotus.com/contact-us.html): Direct booking details, address, Google Maps location, and consultation form.
+- [Intake and Waiver Form](https://floatlikealotus.com/intake.html): Confidential client onboarding, therapy intake, and informed consent form for sessions.
 
 ## Optional & Extended Resources
 - [Full Context & FAQs](https://floatlikealotus.com/llms-full.txt): Complete detailed text archive for LLMs, including extended clinical FAQ answers, methodology, and session breakdown.
