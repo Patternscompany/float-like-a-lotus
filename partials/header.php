@@ -59,7 +59,7 @@
               </li>
             </ul>
             <div class="mt-lg-3">
-              <a href="contact-us.html" class="btn btn-quotes">
+              <a href="https://calendly.com/floatlikealotusshilpa/shilpa-free-30-minutes-consultation-call" target="_blank" rel="noopener noreferrer" class="btn btn-quotes d-inline-flex align-items-center justify-content-center">
                 <i class="bi bi-journal-bookmark-fill pe-2"></i>Book Now</a>
             </div>
           </div>
