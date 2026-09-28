@@ -34,5 +34,9 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-# Canonical Sitemap
+# Canonical Sitemap & LLM Knowledge Files
 Sitemap: https://floatlikealotus.com/sitemap.xml
+
+# LLM Manifest & Documentation (https://llmstxt.org)
+# llms.txt: https://floatlikealotus.com/llms.txt
+# llms-full.txt: https://floatlikealotus.com/llms-full.txt
