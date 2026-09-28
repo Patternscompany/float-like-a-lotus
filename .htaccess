@@ -1,0 +1,124 @@
+# ----------------------------------------------------------------------
+# Float Like A Lotus - Apache Server Configuration (.htaccess)
+# Canonical Domain: https://floatlikealotus.com/
+# ----------------------------------------------------------------------
+
+# 1. CHARACTER ENCODING
+AddDefaultCharset UTF-8
+<IfModule mod_mime.c>
+  AddCharset UTF-8 .html .css .js .xml .json .rss .atom
+</IfModule>
+
+# 2. SECURITY HEADERS
+<IfModule mod_headers.c>
+  # Protect against MIME type sniffing
+  Header set X-Content-Type-Options "nosniff"
+
+  # Prevent clickjacking / unauthorized frame embedding
+  Header set X-Frame-Options "SAMEORIGIN"
+
+  # Cross-Site Scripting (XSS) filter
+  Header set X-XSS-Protection "1; mode=block"
+
+  # Strict Referrer policy for privacy and tracking integrity
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+
+  # Restrict sensitive browser permissions
+  Header set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+
+  # HTTP Strict Transport Security (HSTS)
+  Header set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" env=HTTPS
+</IfModule>
+
+# 3. DIRECTORY BROWSING & SENSITIVE FILE PROTECTION
+Options -Indexes
+<FilesMatch "^\.(?!well-known)">
+  Require all denied
+</FilesMatch>
+
+<FilesMatch "(^#.*#|\.(bak|conf|dist|fla|in[ci]|log|psd|sh|sql|sw[op]|env)|~)$">
+  Require all denied
+</FilesMatch>
+
+# 4. CUSTOM ERROR DOCUMENTS
+ErrorDocument 404 /error-404.php
+
+# 5. REWRITE ENGINE: HTTPS, CANONICAL HOST, & CLEAN URLS
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # 5.1 Enforce HTTPS
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # 5.2 Enforce non-www (https://floatlikealotus.com)
+  RewriteCond %{HTTP_HOST} ^www\.floatlikealotus\.com [NC]
+  RewriteRule ^(.*)$ https://floatlikealotus.com/$1 [L,R=301]
+
+  # 5.3 Remove trailing slash from non-directories
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_URI} (.+)/$
+  RewriteRule ^ %1 [R=301,L]
+
+  # 5.4 Clean URLs: Serve .html extension without displaying it in the address bar
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME}.html -f
+  RewriteRule ^(.*)$ $1.html [L]
+</IfModule>
+
+# 6. GZIP / DEFLATE COMPRESSION (SPEED & CORE WEB VITALS)
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/plain
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/xml
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE text/javascript
+  AddOutputFilterByType DEFLATE application/xml
+  AddOutputFilterByType DEFLATE application/xhtml+xml
+  AddOutputFilterByType DEFLATE application/rss+xml
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE application/x-javascript
+  AddOutputFilterByType DEFLATE application/json
+  AddOutputFilterByType DEFLATE application/ld+json
+  AddOutputFilterByType DEFLATE image/svg+xml
+  AddOutputFilterByType DEFLATE font/ttf
+  AddOutputFilterByType DEFLATE font/otf
+  AddOutputFilterByType DEFLATE font/x-woff
+  AddOutputFilterByType DEFLATE image/x-icon
+</IfModule>
+
+# 7. BROWSER CACHING (EXPIRES & CACHE-CONTROL HEADERS)
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault "access plus 1 month"
+
+  # HTML Documents & Structured Data
+  ExpiresByType text/html "access plus 1 hour"
+  ExpiresByType application/json "access plus 1 hour"
+  ExpiresByType application/ld+json "access plus 1 hour"
+  ExpiresByType text/xml "access plus 1 hour"
+
+  # Stylesheets & Scripts
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType text/javascript "access plus 1 month"
+
+  # Images & Media
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/jpg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+
+  # Fonts
+  ExpiresByType font/ttf "access plus 1 year"
+  ExpiresByType font/otf "access plus 1 year"
+  ExpiresByType font/woff "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType application/font-woff "access plus 1 year"
+  ExpiresByType application/font-woff2 "access plus 1 year"
+</IfModule>

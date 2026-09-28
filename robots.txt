@@ -1,0 +1,38 @@
+# ----------------------------------------------------------------------
+# Float Like A Lotus - Robots Configuration (robots.txt)
+# Canonical Domain: https://floatlikealotus.com/
+# ----------------------------------------------------------------------
+
+User-agent: *
+Allow: /
+Disallow: /partials/
+Disallow: /assets/inc/
+Disallow: /error-404.php
+
+# Search Engine & Generative AI Crawlers (AEO / GEO Engine Access)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Canonical Sitemap
+Sitemap: https://floatlikealotus.com/sitemap.xml
