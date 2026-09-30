@@ -72,54 +72,48 @@ $(function () {
     }
 
     const formData = new FormData(form[0]);
+    formData.set('access_key', 'c409e02e-cfa1-45b3-83dd-8b0553871141');
+    formData.set('from_name', 'Float Like A Lotus');
+    const senderName = form.find('[name="name"]').val();
+    const subject = isSubscribe
+      ? 'New Newsletter Subscription | Float Like A Lotus'
+      : ('New Consultation Request | Float Like A Lotus' + (senderName ? ' - ' + senderName : ''));
+    formData.set('subject', subject);
 
-    // In local file:/// environments, direct to live server endpoint with no-cors fallback
-    if (window.location.protocol === 'file:') {
-      fetch('https://floatlikealotus.com/assets/inc/form_submission.php', {
-        method: 'POST',
-        body: formData,
-        mode: 'no-cors'
-      })
-      .then(function () {
-        handleSuccess();
-      })
-      .catch(function () {
-        handleSuccess();
-      });
-      return;
+    // Also send to local/live PHP mailer as secondary backup if on live server
+    if (window.location.protocol.startsWith('http') && window.location.hostname.includes('floatlikealotus.com')) {
+      try {
+        $.ajax({
+          type: 'POST',
+          url: './assets/inc/form_submission.php',
+          data: form.serialize()
+        });
+      } catch (e) {
+        // Ignore backup failure
+      }
     }
 
-    // In live or localhost server environment
-    const submitUrl = form.attr('action') && !form.attr('action').includes('formsubmit.co')
-      ? form.attr('action')
-      : './assets/inc/form_submission.php';
-
-    $.ajax({
-      type: 'POST',
-      url: submitUrl,
-      data: form.serialize(),
-      success: function (response) {
-        if (typeof response === 'string' && response.trim() === 'success') {
+    // Submit to Web3Forms API (Works in local file:///, localhost, and live HTTPS)
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      body: formData
+    })
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (data) {
+        if (data.success) {
           handleSuccess();
         } else {
-          handleSuccess();
+          console.error('Web3Forms returned error:', data);
+          handleError(data.message);
         }
-      },
-      error: function () {
-        // Fallback to fetch to live endpoint
-        fetch('https://floatlikealotus.com/assets/inc/form_submission.php', {
-          method: 'POST',
-          body: formData,
-          mode: 'no-cors'
-        })
-        .then(function () {
-          handleSuccess();
-        })
-        .catch(function () {
-          handleError();
-        });
-      }
-    });
+      })
+      .catch(function (error) {
+        console.error('Web3Forms fetch error:', error);
+        // If network issue, show friendly message
+        handleError();
+      });
   });
 
   /*--------------------------------------------------------------
