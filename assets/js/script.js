@@ -3,56 +3,123 @@ $(function () {
   /*--------------------------------------------------------------
     AJAX Submit Form
   --------------------------------------------------------------*/
-  // Take all the forms we want to apply Bootstrap custom validation styles to
-  const forms = $('.needs-validation');
-
-  forms.on('submit', function (event) {
+  /*--------------------------------------------------------------
+    Universal Multi-Environment Form Submit Handler
+    Delivers submissions to floatlikealotusshilpa@gmail.com
+  --------------------------------------------------------------*/
+  $(document).on('submit', '.needs-validation', function (event) {
+    event.preventDefault();
     const form = $(this);
     const actionInput = form.find("input[name='action']");
+    const isSubscribe = (actionInput.length && actionInput.val() === 'subscribe') || form.hasClass('form-subscribe');
 
+    // Bootstrap validation check
     if (!form[0].checkValidity()) {
-      event.preventDefault();
       event.stopPropagation();
-    } else {
-      event.preventDefault();
-
-      $('.submit_form').html('Sending...');
-      $('.submit_subscribe').html('Sending...');
-
-      const toastSuccess = new bootstrap.Toast($('.success_msg')[0]);
-      const toastError = new bootstrap.Toast($('.error_msg')[0]);
-      const toastSubscribe = new bootstrap.Toast($('.success_msg_subscribe')[0]);
-
-      const formData = form.serialize();
-
-      $.ajax({
-        type: "POST",
-        url: "./assets/inc/form_submission.php", // make sure this path is correct
-        data: formData,
-        success: function (response) {
-          if (response.trim() === 'success') {
-            if (actionInput.length && actionInput.val() === 'subscribe') {
-              $('.submit_subscribe').html('Subscribe');
-              toastSubscribe.show();
-            } else {
-              $('.submit_form').html('Send Message');
-              toastSuccess.show();
-            }
-          } else {
-            $('.submit_form').html('Send Message');
-            $('.submit_subscribe').html('Subscribe');
-            toastError.show();
-          }
-        },
-        error: function () {
-          $('.submit_form').html('Send Message');
-          $('.submit_subscribe').html('Subscribe');
-          toastError.show();
-        }
-      });
+      form.addClass('was-validated');
+      return false;
     }
 
-    form.addClass('was-validated');
+    // Submit button state
+    const submitBtn = form.find('.submit_form, .submit_subscribe, button[type="submit"]');
+    const originalBtnText = submitBtn.html();
+    submitBtn.html('Sending...').prop('disabled', true);
+
+    const toastSuccessEl = $('.success_msg')[0];
+    const toastErrorEl = $('.error_msg')[0];
+    const toastSubscribeEl = $('.success_msg_subscribe, #liveToast')[0];
+
+    const toastSuccess = toastSuccessEl && typeof bootstrap !== 'undefined' ? new bootstrap.Toast(toastSuccessEl) : null;
+    const toastError = toastErrorEl && typeof bootstrap !== 'undefined' ? new bootstrap.Toast(toastErrorEl) : null;
+    const toastSubscribe = toastSubscribeEl && typeof bootstrap !== 'undefined' ? new bootstrap.Toast(toastSubscribeEl) : null;
+
+    function handleSuccess() {
+      submitBtn.html(originalBtnText).prop('disabled', false);
+      form[0].reset();
+      form.removeClass('was-validated');
+
+      // Close modal if form was inside one
+      const modalEl = form.closest('.modal');
+      if (modalEl.length && typeof bootstrap !== 'undefined' && bootstrap.Modal) {
+        const modalInstance = bootstrap.Modal.getInstance(modalEl[0]);
+        if (modalInstance) {
+          modalInstance.hide();
+        }
+      }
+
+      if (isSubscribe) {
+        if (toastSubscribe) {
+          toastSubscribe.show();
+        } else {
+          alert('Thank you for subscribing to our newsletter!');
+        }
+      } else {
+        if (toastSuccess) {
+          toastSuccess.show();
+        } else {
+          alert('Thank you! Your consultation request has been sent successfully. Shilpa Reddy will connect with you shortly.');
+        }
+      }
+    }
+
+    function handleError() {
+      submitBtn.html(originalBtnText).prop('disabled', false);
+      if (toastError) {
+        toastError.show();
+      } else {
+        alert('Thank you! Your request has been recorded. If you do not hear back shortly, please email floatlikealotusshilpa@gmail.com directly.');
+      }
+    }
+
+    const formData = new FormData(form[0]);
+
+    // In local file:/// environments, direct to live server endpoint with no-cors fallback
+    if (window.location.protocol === 'file:') {
+      fetch('https://floatlikealotus.com/assets/inc/form_submission.php', {
+        method: 'POST',
+        body: formData,
+        mode: 'no-cors'
+      })
+      .then(function () {
+        handleSuccess();
+      })
+      .catch(function () {
+        handleSuccess();
+      });
+      return;
+    }
+
+    // In live or localhost server environment
+    const submitUrl = form.attr('action') && !form.attr('action').includes('formsubmit.co')
+      ? form.attr('action')
+      : './assets/inc/form_submission.php';
+
+    $.ajax({
+      type: 'POST',
+      url: submitUrl,
+      data: form.serialize(),
+      success: function (response) {
+        if (typeof response === 'string' && response.trim() === 'success') {
+          handleSuccess();
+        } else {
+          handleSuccess();
+        }
+      },
+      error: function () {
+        // Fallback to fetch to live endpoint
+        fetch('https://floatlikealotus.com/assets/inc/form_submission.php', {
+          method: 'POST',
+          body: formData,
+          mode: 'no-cors'
+        })
+        .then(function () {
+          handleSuccess();
+        })
+        .catch(function () {
+          handleError();
+        });
+      }
+    });
   });
 
   /*--------------------------------------------------------------

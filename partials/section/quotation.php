@@ -47,7 +47,7 @@
                   </div>
                 </div>
                 <!-- Form -->
-                <form class="needs-validation" method="POST" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="500"
+                <form class="needs-validation" method="POST" action="./assets/inc/form_submission.php" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="500"
                   data-aos-duration="1000" novalidate>
                   <div class="row g-3">
                     <div class="col-lg-6 col-sm-12">
@@ -142,7 +142,7 @@
                   </div>
                   <div class="ms-2 font-1 py-2">
                     <p class="fw-bold text-primary-color mb-0">Email us</p>
-                    <h5 class="fw-bold">shilpa@gmail.com</h5>
+                    <h5 class="fw-bold">floatlikealotusshilpa@gmail.com</h5>
                   </div>
                 </div>
                 <div class="d-flex align-items-center gap-3 justify-content-start" data-aos="fade-left"
