@@ -601,19 +601,11 @@ img {
   padding: 6em 2em 6em 2em;
   position: relative;
   overflow: hidden;
+  background: linear-gradient(to right, #b2c4f1, #ecc0d2);
 }
 
 .quotes-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 75%;
-  background-image: url('../image/Place-Holder-1920x1280.jpg');
-  background-size: cover;
-  background-position: center center;
-  opacity: 0.8;
-  z-index: -1; /* place behind of content */
+  display: none;
 }
 
 .quotes-background::before {

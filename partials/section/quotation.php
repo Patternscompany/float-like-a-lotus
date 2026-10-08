@@ -1,14 +1,14 @@
 <!-- Quotes Section -->
-<section class="quotes-section py-5">
-  <div class="quotes-background"></div>
+<section class="quotes-section py-5" style="background: linear-gradient(to right, #b2c4f1, #ecc0d2);">
+  <!-- <div class="quotes-background"></div> -->
   <div class="container py-5 px-2 px-md-0">
-    <div class="row justify-content-center text-center text-white">
+    <div class="row justify-content-center text-center">
       <div class="col-12 col-xl-10">
-        <h6 class="text-primary-color fw-semibold mb-2">GET A QUOTE</h6>
-        <h2 class="font-1 text-white" style="font-weight: 800;">
-          Take <span class="text-primary-color">The first step</span> toward a <span
-            class="text-primary-color">healthier</span> mind. Join us today and start
-          your journey to <span class="text-primary-color">well-being!</span>
+        <h6 class="fw-semibold mb-2" style="color: #222;">GET A QUOTE</h6>
+        <h2 class="font-1" style="font-weight: 800; color: #222;">
+          Take <span style="color: #1747A6;">The first step</span> toward a <span
+            style="color: #1747A6;">healthier</span> mind. Join us today and start
+          your journey to <span style="color: #1747A6;">well-being!</span>
         </h2>
       </div>
     </div>
