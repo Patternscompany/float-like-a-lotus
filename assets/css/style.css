@@ -111,9 +111,9 @@ body {
 ;
 }
 
-.bg-gradient-secondary {
-  /* background: linear-gradient(45deg, #8BACEE, #F7D3DA); */
-}
+/* .bg-gradient-secondary {
+  background: linear-gradient(45deg, #8BACEE, #F7D3DA);
+} */
 
 .text-primary-color {
   color: #F291A3;
@@ -574,6 +574,7 @@ img {
   background:
   -webkit-linear-gradient(var(--primary-color), #9abbfd);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -1334,7 +1335,7 @@ header{
   }
 
   .dropdown-submenu .dropdown-toggle::after {
-    display: inline-block;
+    float: right;
     margin-left: .5rem;
     vertical-align: middle;
     content: "";
@@ -1342,7 +1343,6 @@ header{
     border-right: 0;
     border-bottom: .3em solid transparent;
     border-left: .3em solid;
-    float: right;
   }
 }
 
